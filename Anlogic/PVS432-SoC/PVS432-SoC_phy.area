@@ -1,0 +1,148 @@
+verbose
+***Report Model: PVS464_Top***
+
+IO Statistics
+#IO                   108
+  #input               13
+  #output              32
+  #inout               63
+
+Utilization Statistics
+#mslice              3726   out of   4900   76.04%
+  #mreg              2657
+  #mle               7268
+#lslice              3764   out of   4900   76.82%
+  #lreg              3333
+  #lle               7414
+#plb                 2346   out of   2450   95.76%
+#lut                14801   out of  19600   75.52%
+#reg                 5990   out of  19600   30.56%
+  #gsrn               753
+#le                 14801
+  #lut only          8811   out of  14801   59.53%
+  #reg only             0   out of  14801    0.00%
+  #lut&reg           5990   out of  14801   40.47%
+#dsp                    0   out of     29    0.00%
+#bram                  16   out of     64   25.00%
+  #bram9k              16
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                  118   out of    130   90.77%
+  #ireg                20
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+
+Detailed IO Report
+
+Name         Direction     Location     IOStandard     DriveStrength     PackReg                  
+ECINT        INPUT         P139         LVCMOS25       N/A               NONE                     
+FDRQ         INPUT         P8           LVCMOS25       N/A               NONE                     
+FERR         INPUT         P2           LVCMOS25       N/A               NONE                     
+FINT         INPUT         P11          LVCMOS25       N/A               NONE                     
+GCLK         INPUT         P89          LVCMOS25       N/A               NONE                     
+LVDSR[3]     INPUT         P130         LVDS25         N/A               NONE                     
+LVDSR[2]     INPUT         P126         LVDS25         N/A               NONE                     
+LVDSR[1]     INPUT         P124         LVDS25         N/A               NONE                     
+LVDSR[0]     INPUT         P121         LVDS25         N/A               NONE                     
+MISO         INPUT         P58          LVCMOS33       N/A               NONE                     
+RST_N        INPUT         P42          LVCMOS25       N/A               NONE                     
+UART0_RX     INPUT         P118         LVCMOS25       N/A               IREG                     
+UART1_RX     INPUT         P114         LVCMOS25       N/A               IREG                     
+FAEN         OUTPUT        P14          LVCMOS25       8                 NONE                     
+FCLK         OUTPUT        P19          LVCMOS25       8                 NONE                     
+FCS          OUTPUT        P16          LVCMOS25       8                 NONE                     
+FSIZ         OUTPUT        P3           LVCMOS25       8                 OREG                     
+FTR[1]       OUTPUT        P4           LVCMOS25       8                 NONE                     
+FTR[0]       OUTPUT        P6           LVCMOS25       8                 NONE                     
+FWR          OUTPUT        P15          LVCMOS25       8                 NONE                     
+LVDSC        OUTPUT        P131         LVDS25         NA                NONE                     
+LVDST[3]     OUTPUT        P111         LVDS25         NA                NONE                     
+LVDST[2]     OUTPUT        P106         LVDS25         NA                NONE                     
+LVDST[1]     OUTPUT        P103         LVDS25         NA                NONE                     
+LVDST[0]     OUTPUT        P100         LVDS25         NA                NONE                     
+MCLK         OUTPUT        P88          LVCMOS25       8                 NONE                     
+MCS[7]       OUTPUT        P144         LVCMOS25       8                 NONE                     
+MCS[6]       OUTPUT        P143         LVCMOS25       8                 NONE                     
+MCS[5]       OUTPUT        P141         LVCMOS25       8                 NONE                     
+MCS[4]       OUTPUT        P138         LVCMOS25       8                 NONE                     
+MCS[3]       OUTPUT        P136         LVCMOS25       8                 NONE                     
+MCS[2]       OUTPUT        P133         LVCMOS25       8                 NONE                     
+MCS[1]       OUTPUT        P95          LVCMOS25       8                 NONE                     
+MCS[0]       OUTPUT        P94          LVCMOS25       8                 NONE                     
+MOSI         OUTPUT        P57          LVCMOS33       8                 NONE                     
+QCLK         OUTPUT        P174         LVCMOS25       8                 NONE                     
+QCSN         OUTPUT        P163         LVCMOS25       8                 NONE                     
+SCLK         OUTPUT        P60          LVCMOS33       8                 NONE                     
+SCS          OUTPUT        P61          LVCMOS33       8                 OREG                     
+SDCLK        OUTPUT        P53          LVCMOS33       8                 NONE                     
+SSEL[2]      OUTPUT        P62          LVCMOS25       8                 NONE                     
+SSEL[1]      OUTPUT        P63          LVCMOS25       8                 NONE                     
+SSEL[0]      OUTPUT        P64          LVCMOS25       8                 NONE                     
+UART0_TX     OUTPUT        P119         LVCMOS25       8                 NONE                     
+UART1_TX     OUTPUT        P115         LVCMOS25       8                 NONE                     
+FBD[15]      INOUT         P17          LVCMOS25       8                 IREG                     
+FBD[14]      INOUT         P22          LVCMOS25       8                 IREG                     
+FBD[13]      INOUT         P23          LVCMOS25       8                 IREG                     
+FBD[12]      INOUT         P25          LVCMOS25       8                 IREG                     
+FBD[11]      INOUT         P26          LVCMOS25       8                 IREG                     
+FBD[10]      INOUT         P27          LVCMOS25       8                 IREG                     
+FBD[9]       INOUT         P28          LVCMOS25       8                 IREG                     
+FBD[8]       INOUT         P29          LVCMOS25       8                 IREG                     
+FBD[7]       INOUT         P30          LVCMOS25       8                 IREG                     
+FBD[6]       INOUT         P31          LVCMOS25       8                 IREG                     
+FBD[5]       INOUT         P32          LVCMOS25       8                 IREG                     
+FBD[4]       INOUT         P35          LVCMOS25       8                 IREG                     
+FBD[3]       INOUT         P36          LVCMOS25       8                 IREG                     
+FBD[2]       INOUT         P37          LVCMOS25       8                 IREG                     
+FBD[1]       INOUT         P39          LVCMOS25       8                 IREG                     
+FBD[0]       INOUT         P41          LVCMOS25       8                 IREG                     
+GPIOA[2]     INOUT         P90          LVCMOS25       8                 NONE                     
+GPIOA[1]     INOUT         P91          LVCMOS25       8                 NONE                     
+GPIOA[0]     INOUT         P93          LVCMOS25       8                 NONE                     
+MDAT[31]     INOUT         P162         LVCMOS25       8                 NONE                     
+MDAT[30]     INOUT         P161         LVCMOS25       8                 NONE                     
+MDAT[29]     INOUT         P159         LVCMOS25       8                 NONE                     
+MDAT[28]     INOUT         P158         LVCMOS25       8                 NONE                     
+MDAT[27]     INOUT         P157         LVCMOS25       8                 NONE                     
+MDAT[26]     INOUT         P156         LVCMOS25       8                 NONE                     
+MDAT[25]     INOUT         P155         LVCMOS25       8                 NONE                     
+MDAT[24]     INOUT         P153         LVCMOS25       8                 NONE                     
+MDAT[23]     INOUT         P152         LVCMOS25       8                 NONE                     
+MDAT[22]     INOUT         P151         LVCMOS25       8                 NONE                     
+MDAT[21]     INOUT         P150         LVCMOS25       8                 NONE                     
+MDAT[20]     INOUT         P149         LVCMOS25       8                 NONE                     
+MDAT[19]     INOUT         P148         LVCMOS25       8                 NONE                     
+MDAT[18]     INOUT         P147         LVCMOS25       8                 NONE                     
+MDAT[17]     INOUT         P146         LVCMOS25       8                 NONE                     
+MDAT[16]     INOUT         P145         LVCMOS25       8                 NONE                     
+MDAT[15]     INOUT         P86          LVCMOS25       8                 NONE                     
+MDAT[14]     INOUT         P84          LVCMOS25       8                 NONE                     
+MDAT[13]     INOUT         P83          LVCMOS25       8                 NONE                     
+MDAT[12]     INOUT         P82          LVCMOS25       8                 NONE                     
+MDAT[11]     INOUT         P81          LVCMOS25       8                 NONE                     
+MDAT[10]     INOUT         P79          LVCMOS25       8                 NONE                     
+MDAT[9]      INOUT         P78          LVCMOS25       8                 NONE                     
+MDAT[8]      INOUT         P77          LVCMOS25       8                 NONE                     
+MDAT[7]      INOUT         P76          LVCMOS25       8                 NONE                     
+MDAT[6]      INOUT         P75          LVCMOS25       8                 NONE                     
+MDAT[5]      INOUT         P74          LVCMOS25       8                 NONE                     
+MDAT[4]      INOUT         P73          LVCMOS25       8                 NONE                     
+MDAT[3]      INOUT         P72          LVCMOS25       8                 NONE                     
+MDAT[2]      INOUT         P71          LVCMOS25       8                 NONE                     
+MDAT[1]      INOUT         P70          LVCMOS25       8                 NONE                     
+MDAT[0]      INOUT         P69          LVCMOS25       8                 NONE                     
+QPIO[3]      INOUT         P176         LVCMOS25       8                 NONE                     
+QPIO[2]      INOUT         P170         LVCMOS25       8                 NONE                     
+QPIO[1]      INOUT         P169         LVCMOS25       8                 NONE                     
+QPIO[0]      INOUT         P173         LVCMOS25       8                 NONE                     
+SCL          INOUT         P66          LVCMOS25       8                 IREG                     
+SDA          INOUT         P68          LVCMOS25       8                 IREG                     
+SDCMD        INOUT         P54          LVCMOS33       8                 NONE                     
+SDDAT[3]     INOUT         P55          LVCMOS33       8                 NONE                     
+SDDAT[2]     INOUT         P56          LVCMOS33       8                 NONE                     
+SDDAT[1]     INOUT         P51          LVCMOS33       8                 NONE                     
+SDDAT[0]     INOUT         P52          LVCMOS33       8                 NONE                     
+USB          INOUT         P50          LVDS33_E       8                 NONE                     
+

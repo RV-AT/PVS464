@@ -1,0 +1,1015 @@
+=========================================================================================================
+Auto created by the td v4.6.14756
+@Copy Right: Shanghai Anlogic Infotech, 2011 - 2021.
+Sat Jul 11 00:24:59 2020
+=========================================================================================================
+
+
+Top Model:                PVS464_Top                                                      
+Device:                   eagle_s20                                                       
+Timing Constraint File:   PVS432-SoC.sdc                                                  
+STA Level:                Detail                                                          
+Process parameter::       TT  1.10v  85C                                                  
+
+=========================================================================================================
+Timing constraint:        clock: GCLKIN                                                   
+Clock = GCLKIN, period 20ns, rising at 0ns, falling at 10ns
+
+106 endpoints analyzed totally, and 106 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 1.922ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u2266|RSTController/SYSRST_reg_placeOpt_4 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      18.078 ns                                                       
+ StartPoint:              _al_u2266|RSTController/SYSRST_reg.clk (rising edge triggered by clock GCLKIN)
+ EndPoint:                _al_u2266|RSTController/SYSRST_reg_placeOpt_4.c[0] (rising edge triggered by clock GCLKIN)
+ Clock group:             GCLKIN                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u2266|RSTController/SYSRST_reg.clk                      clock                   3.427
+ launch clock edge                                           clock                   0.000
+ _al_u2266|RSTController/SYSRST_reg.q[0]                     cell                    0.146
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_4.c[0] (srst)   net (fanout = 113)      1.197 ../../RTL/PVS464_Top.v(58)
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_4               path2reg0               0.466
+ Arrival time                                                                        5.236 (1 lvl)
+                                                                                          (78% logic, 22% net)
+
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_4.clk                                   3.357
+ capture clock edge                                                                 20.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.073
+ Required time                                                                      23.314
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           18.078 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u2266|RSTController/SYSRST_reg_placeOpt_11 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      18.092 ns                                                       
+ StartPoint:              _al_u2266|RSTController/SYSRST_reg.clk (rising edge triggered by clock GCLKIN)
+ EndPoint:                _al_u2266|RSTController/SYSRST_reg_placeOpt_11.a[0] (rising edge triggered by clock GCLKIN)
+ Clock group:             GCLKIN                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u2266|RSTController/SYSRST_reg.clk                      clock                   3.427
+ launch clock edge                                           clock                   0.000
+ _al_u2266|RSTController/SYSRST_reg.q[0]                     cell                    0.146
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_11.a[0] (srst)  net (fanout = 113)      1.512 ../../RTL/PVS464_Top.v(58)
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_11              path2reg0               0.542
+ Arrival time                                                                        5.627 (1 lvl)
+                                                                                          (74% logic, 26% net)
+
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_11.clk                                  3.762
+ capture clock edge                                                                 20.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.073
+ Required time                                                                      23.719
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           18.092 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u2266|RSTController/SYSRST_reg_placeOpt_23 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      18.210 ns                                                       
+ StartPoint:              _al_u2266|RSTController/SYSRST_reg.clk (rising edge triggered by clock GCLKIN)
+ EndPoint:                _al_u2266|RSTController/SYSRST_reg_placeOpt_23.a[0] (rising edge triggered by clock GCLKIN)
+ Clock group:             GCLKIN                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u2266|RSTController/SYSRST_reg.clk                      clock                   3.427
+ launch clock edge                                           clock                   0.000
+ _al_u2266|RSTController/SYSRST_reg.q[0]                     cell                    0.146
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_23.a[0] (srst)  net (fanout = 113)      1.363 ../../RTL/PVS464_Top.v(58)
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_23              path2reg0               0.542
+ Arrival time                                                                        5.478 (1 lvl)
+                                                                                          (76% logic, 24% net)
+
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_23.clk                                  3.731
+ capture clock edge                                                                 20.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.073
+ Required time                                                                      23.688
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           18.210 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point _al_u2266|RSTController/SYSRST_reg_placeOpt_19 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.065 ns                                                        
+ StartPoint:              _al_u2266|RSTController/SYSRST_reg.clk (rising edge triggered by clock GCLKIN)
+ EndPoint:                _al_u2266|RSTController/SYSRST_reg_placeOpt_19.c[0] (rising edge triggered by clock GCLKIN)
+ Clock group:             GCLKIN                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u2266|RSTController/SYSRST_reg.clk                      clock                   3.202
+ launch clock edge                                           clock                   0.000
+ _al_u2266|RSTController/SYSRST_reg.q[0]                     cell                    0.140
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_19.c[0] (srst)  net (fanout = 113)      1.090 ../../RTL/PVS464_Top.v(58)
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_19              path2reg0               0.402
+ Arrival time                                                                        4.834 (1 lvl)
+                                                                                          (78% logic, 22% net)
+
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_19.clk                                  4.768
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.073
+ Required time                                                                       4.769
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.065 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u2266|RSTController/SYSRST_reg_placeOpt_37 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.431 ns                                                        
+ StartPoint:              _al_u2266|RSTController/SYSRST_reg.clk (rising edge triggered by clock GCLKIN)
+ EndPoint:                _al_u2266|RSTController/SYSRST_reg_placeOpt_37.b[0] (rising edge triggered by clock GCLKIN)
+ Clock group:             GCLKIN                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u2266|RSTController/SYSRST_reg.clk                      clock                   3.202
+ launch clock edge                                           clock                   0.000
+ _al_u2266|RSTController/SYSRST_reg.q[0]                     cell                    0.140
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_37.b[0] (srst)  net (fanout = 113)      1.351 ../../RTL/PVS464_Top.v(58)
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_37              path2reg0               0.507
+ Arrival time                                                                        5.200 (1 lvl)
+                                                                                          (75% logic, 25% net)
+
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_37.clk                                  4.768
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.073
+ Required time                                                                       4.769
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.431 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u2266|RSTController/SYSRST_reg_placeOpt_43 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.489 ns                                                        
+ StartPoint:              _al_u2266|RSTController/SYSRST_reg.clk (rising edge triggered by clock GCLKIN)
+ EndPoint:                _al_u2266|RSTController/SYSRST_reg_placeOpt_43.e[0] (rising edge triggered by clock GCLKIN)
+ Clock group:             GCLKIN                                                          
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u2266|RSTController/SYSRST_reg.clk                      clock                   3.202
+ launch clock edge                                           clock                   0.000
+ _al_u2266|RSTController/SYSRST_reg.q[0]                     cell                    0.140
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_43.e[0] (srst)  net (fanout = 113)      0.718 ../../RTL/PVS464_Top.v(58)
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_43              path2reg0               0.375
+ Arrival time                                                                        4.435 (1 lvl)
+                                                                                          (84% logic, 16% net)
+
+ _al_u2266|RSTController/SYSRST_reg_placeOpt_43.clk                                  3.945
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.073
+ Required time                                                                       3.946
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.489 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing constraint:        clock: mainclk                                                  
+Clock = mainclk, period 10ns, rising at 0ns, falling at 5ns
+
+30356 endpoints analyzed totally, and more than 1000000000 paths analyzed
+4519 errors detected : 4519 setup errors (TNS = -21079.623), 0 hold errors (TNS = 0.000)
+Minimum period is 23.269ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point CPU1/ins_fetch/reg2_b44 (357430159 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -13.269 ns                                                       
+ StartPoint:              CPU1/_al_u2998|ins_dec/amo_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/ins_fetch/reg2_b44.d[1] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/_al_u2998|ins_dec/amo_reg.clk                          clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/_al_u2998|ins_dec/amo_reg.q[0]                         cell                    0.146
+ CPU1/_al_u4626|_al_u3300.a[1] (CPU1/amo)                    net (fanout = 8)        0.737 ../../RTL/CPU/prv464_top.v(158)
+ CPU1/_al_u4626|_al_u3300.f[1]                               cell                    0.424
+ CPU1/_al_u4628|_al_u4760.d[1] (CPU1/_al_u4626_o)            net (fanout = 3)        1.010               
+ CPU1/_al_u4628|_al_u4760.f[1]                               cell                    0.262
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.d[1] (CPU1/_al_u4628_o) net (fanout = 52)       1.187               
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.f[1] cell                    0.205
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.b[1] (CPU1/biu/D_biu_cell/TLB/TLB_entry0/n8_lutinv_placeOpt_5) net (fanout = 9)        0.171               
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.f[1]  cell                    0.431
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.c[1] (CPU1/_al_u5003_o) net (fanout = 2)        1.112               
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.fx[0]          cell                    0.448
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.b[1] (CPU1/biu/D_pa[37]) net (fanout = 19)       1.421 ../../RTL/CPU/BIU/biu.v(133)
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.f[1] cell                    0.431
+ CPU1/_al_u7505.d[1] (CPU1/biu/D_biu_cell/L1/eq2/xor_i0[26]_i1[26]_o_lutinv) net (fanout = 4)        0.769               
+ CPU1/_al_u7505.fx[0]                                        cell                    0.402
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.c[1] (CPU1/_al_u7505_o) net (fanout = 1)        0.827               
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.f[1] cell                    0.348
+ CPU1/_al_u7550|_al_u7542.b[1] (CPU1/_al_u7523_o)            net (fanout = 1)        0.757               
+ CPU1/_al_u7550|_al_u7542.f[1]                               cell                    0.431
+ CPU1/_al_u8175.d[1] (CPU1/_al_u7550_o)                      net (fanout = 3)        0.695               
+ CPU1/_al_u8175.fx[0]                                        cell                    0.402
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.c[1] (CPU1/_al_u8175_o) net (fanout = 16)       0.739               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.fx[0]          cell                    0.448
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.a[1] (CPU1/biu/I_pa[22]) net (fanout = 8)        0.781 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.f[1]                cell                    0.408
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.d[0] (CPU1/_al_u9662_o) net (fanout = 2)        0.738               
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.f[0] cell                    0.262
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.d[0] (CPU1/_al_u9917_o) net (fanout = 1)        0.608               
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.f[0] cell                    0.262
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.e[1] (CPU1/_al_u9919_o) net (fanout = 1)        0.689               
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.f[1] cell                    0.282
+ CPU1/_al_u9926.c[1] (CPU1/_al_u9921_o)                      net (fanout = 2)        0.738               
+ CPU1/_al_u9926.fx[0]                                        cell                    0.448
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.a[1] (CPU1/_al_u9926_o) net (fanout = 12)       1.170               
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.f[1]                   cell                    0.424
+ CPU1/ins_fetch/reg2_b44.d[1] (CPU1/_al_u10047_o_placeOpt_2) net (fanout = 26)       1.822 ../../RTL/CPU/prv464_top.v(84)
+ CPU1/ins_fetch/reg2_b44                                     path2reg0               0.509
+ Arrival time                                                                       25.212 (18 lvl)
+                                                                                          (37% logic, 63% net)
+
+ CPU1/ins_fetch/reg2_b44.clk                                                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.134
+ Required time                                                                      11.943
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -13.269 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -13.269 ns                                                       
+ StartPoint:              CPU1/_al_u2998|ins_dec/amo_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/ins_fetch/reg2_b44.d[1] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/_al_u2998|ins_dec/amo_reg.clk                          clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/_al_u2998|ins_dec/amo_reg.q[0]                         cell                    0.146
+ CPU1/_al_u4626|_al_u3300.a[1] (CPU1/amo)                    net (fanout = 8)        0.737 ../../RTL/CPU/prv464_top.v(158)
+ CPU1/_al_u4626|_al_u3300.f[1]                               cell                    0.424
+ CPU1/_al_u4628|_al_u4760.d[1] (CPU1/_al_u4626_o)            net (fanout = 3)        1.010               
+ CPU1/_al_u4628|_al_u4760.f[1]                               cell                    0.262
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.d[1] (CPU1/_al_u4628_o) net (fanout = 52)       1.187               
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.f[1] cell                    0.205
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.b[1] (CPU1/biu/D_biu_cell/TLB/TLB_entry0/n8_lutinv_placeOpt_5) net (fanout = 9)        0.171               
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.f[1]  cell                    0.431
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.c[1] (CPU1/_al_u5003_o) net (fanout = 2)        1.112               
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.fx[0]          cell                    0.448
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.b[1] (CPU1/biu/D_pa[37]) net (fanout = 19)       1.421 ../../RTL/CPU/BIU/biu.v(133)
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.f[1] cell                    0.431
+ CPU1/_al_u7505.d[1] (CPU1/biu/D_biu_cell/L1/eq2/xor_i0[26]_i1[26]_o_lutinv) net (fanout = 4)        0.769               
+ CPU1/_al_u7505.fx[0]                                        cell                    0.402
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.c[1] (CPU1/_al_u7505_o) net (fanout = 1)        0.827               
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.f[1] cell                    0.348
+ CPU1/_al_u7550|_al_u7542.b[1] (CPU1/_al_u7523_o)            net (fanout = 1)        0.757               
+ CPU1/_al_u7550|_al_u7542.f[1]                               cell                    0.431
+ CPU1/_al_u8175.d[1] (CPU1/_al_u7550_o)                      net (fanout = 3)        0.695               
+ CPU1/_al_u8175.fx[0]                                        cell                    0.402
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.c[1] (CPU1/_al_u8175_o) net (fanout = 16)       0.739               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.fx[0]          cell                    0.448
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.a[1] (CPU1/biu/I_pa[22]) net (fanout = 8)        0.781 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.f[1]                cell                    0.408
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.d[0] (CPU1/_al_u9662_o) net (fanout = 2)        0.738               
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.f[0] cell                    0.262
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.d[0] (CPU1/_al_u9917_o) net (fanout = 1)        0.608               
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.f[0] cell                    0.262
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.e[1] (CPU1/_al_u9919_o) net (fanout = 1)        0.689               
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.f[1] cell                    0.282
+ CPU1/_al_u9926.c[0] (CPU1/_al_u9921_o)                      net (fanout = 2)        0.738               
+ CPU1/_al_u9926.fx[0]                                        cell                    0.448
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.a[1] (CPU1/_al_u9926_o) net (fanout = 12)       1.170               
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.f[1]                   cell                    0.424
+ CPU1/ins_fetch/reg2_b44.d[1] (CPU1/_al_u10047_o_placeOpt_2) net (fanout = 26)       1.822 ../../RTL/CPU/prv464_top.v(84)
+ CPU1/ins_fetch/reg2_b44                                     path2reg0               0.509
+ Arrival time                                                                       25.212 (18 lvl)
+                                                                                          (37% logic, 63% net)
+
+ CPU1/ins_fetch/reg2_b44.clk                                                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.134
+ Required time                                                                      11.943
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -13.269 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -13.269 ns                                                       
+ StartPoint:              CPU1/_al_u2998|ins_dec/amo_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/ins_fetch/reg2_b44.d[0] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/_al_u2998|ins_dec/amo_reg.clk                          clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/_al_u2998|ins_dec/amo_reg.q[0]                         cell                    0.146
+ CPU1/_al_u4626|_al_u3300.a[1] (CPU1/amo)                    net (fanout = 8)        0.737 ../../RTL/CPU/prv464_top.v(158)
+ CPU1/_al_u4626|_al_u3300.f[1]                               cell                    0.424
+ CPU1/_al_u4628|_al_u4760.d[1] (CPU1/_al_u4626_o)            net (fanout = 3)        1.010               
+ CPU1/_al_u4628|_al_u4760.f[1]                               cell                    0.262
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.d[1] (CPU1/_al_u4628_o) net (fanout = 52)       1.187               
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.f[1] cell                    0.205
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.b[1] (CPU1/biu/D_biu_cell/TLB/TLB_entry0/n8_lutinv_placeOpt_5) net (fanout = 9)        0.171               
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.f[1]  cell                    0.431
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.c[1] (CPU1/_al_u5003_o) net (fanout = 2)        1.112               
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.fx[0]          cell                    0.448
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.b[1] (CPU1/biu/D_pa[37]) net (fanout = 19)       1.421 ../../RTL/CPU/BIU/biu.v(133)
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.f[1] cell                    0.431
+ CPU1/_al_u7505.d[1] (CPU1/biu/D_biu_cell/L1/eq2/xor_i0[26]_i1[26]_o_lutinv) net (fanout = 4)        0.769               
+ CPU1/_al_u7505.fx[0]                                        cell                    0.402
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.c[1] (CPU1/_al_u7505_o) net (fanout = 1)        0.827               
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.f[1] cell                    0.348
+ CPU1/_al_u7550|_al_u7542.b[1] (CPU1/_al_u7523_o)            net (fanout = 1)        0.757               
+ CPU1/_al_u7550|_al_u7542.f[1]                               cell                    0.431
+ CPU1/_al_u8175.d[1] (CPU1/_al_u7550_o)                      net (fanout = 3)        0.695               
+ CPU1/_al_u8175.fx[0]                                        cell                    0.402
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.c[1] (CPU1/_al_u8175_o) net (fanout = 16)       0.739               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.fx[0]          cell                    0.448
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.a[1] (CPU1/biu/I_pa[22]) net (fanout = 8)        0.781 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.f[1]                cell                    0.408
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.d[0] (CPU1/_al_u9662_o) net (fanout = 2)        0.738               
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.f[0] cell                    0.262
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.d[0] (CPU1/_al_u9917_o) net (fanout = 1)        0.608               
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.f[0] cell                    0.262
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.e[1] (CPU1/_al_u9919_o) net (fanout = 1)        0.689               
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.f[1] cell                    0.282
+ CPU1/_al_u9926.c[1] (CPU1/_al_u9921_o)                      net (fanout = 2)        0.738               
+ CPU1/_al_u9926.fx[0]                                        cell                    0.448
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.a[1] (CPU1/_al_u9926_o) net (fanout = 12)       1.170               
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.f[1]                   cell                    0.424
+ CPU1/ins_fetch/reg2_b44.d[0] (CPU1/_al_u10047_o_placeOpt_2) net (fanout = 26)       1.822 ../../RTL/CPU/prv464_top.v(84)
+ CPU1/ins_fetch/reg2_b44                                     path2reg0               0.509
+ Arrival time                                                                       25.212 (18 lvl)
+                                                                                          (37% logic, 63% net)
+
+ CPU1/ins_fetch/reg2_b44.clk                                                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.134
+ Required time                                                                      11.943
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -13.269 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8 (179179239 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -13.001 ns                                                       
+ StartPoint:              CPU1/_al_u2998|ins_dec/amo_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.ce (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/_al_u2998|ins_dec/amo_reg.clk                          clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/_al_u2998|ins_dec/amo_reg.q[0]                         cell                    0.146
+ CPU1/_al_u4626|_al_u3300.a[1] (CPU1/amo)                    net (fanout = 8)        0.737 ../../RTL/CPU/prv464_top.v(158)
+ CPU1/_al_u4626|_al_u3300.f[1]                               cell                    0.424
+ CPU1/_al_u4628|_al_u4760.d[1] (CPU1/_al_u4626_o)            net (fanout = 3)        1.010               
+ CPU1/_al_u4628|_al_u4760.f[1]                               cell                    0.262
+ CPU1/_al_u4703|_al_u4775.e[1] (CPU1/_al_u4628_o)            net (fanout = 52)       0.385               
+ CPU1/_al_u4703|_al_u4775.f[1]                               cell                    0.282
+ CPU1/_al_u5134|biu/D_biu_cell/TLB/TLB_entry2/reg2_b11.a[1] (CPU1/_al_u4703_o) net (fanout = 8)        1.782               
+ CPU1/_al_u5134|biu/D_biu_cell/TLB/TLB_entry2/reg2_b11.f[1]  cell                    0.424
+ CPU1/_al_u5136|biu/D_biu_cell/L1/cache_entry3/reg1_b23.b[0] (CPU1/biu/D_biu_cell/TLB/n28[11]) net (fanout = 1)        0.456               
+ CPU1/_al_u5136|biu/D_biu_cell/L1/cache_entry3/reg1_b23.f[0] cell                    0.431
+ CPU1/_al_u7506|biu/D_biu_cell/L1/cache_entry1/reg1_b21.c[0] (CPU1/biu/D_pa[23]) net (fanout = 13)       1.872 ../../RTL/CPU/BIU/biu.v(133)
+ CPU1/_al_u7506|biu/D_biu_cell/L1/cache_entry1/reg1_b21.f[0] cell                    0.348
+ CPU1/_al_u7967|biu/D_biu_cell/L1/cache_entry1/reg1_b26.c[1] (CPU1/_al_u7965_o) net (fanout = 1)        0.795               
+ CPU1/_al_u7967|biu/D_biu_cell/L1/cache_entry1/reg1_b26.f[1] cell                    0.348
+ CPU1/_al_u7975.b[1] (CPU1/_al_u7967_o)                      net (fanout = 2)        0.459               
+ CPU1/_al_u7975.fx[0]                                        cell                    0.543
+ CPU1/_al_u8021|_al_u8080.b[1] (CPU1/_al_u7975_o)            net (fanout = 10)       0.691               
+ CPU1/_al_u8021|_al_u8080.f[1]                               cell                    0.431
+ CPU1/_al_u8021|_al_u8080_placeOpt_4.d[0] (CPU1/_al_u8021_o) net (fanout = 10)       1.345               
+ CPU1/_al_u8021|_al_u8080_placeOpt_4.f[0]                    cell                    0.262
+ CPU1/_al_u8424|biu/I_biu_cell/TLB/TLB_entry3/reg2_b22.d[1] (CPU1/_al_u8080_o_placeOpt_4) net (fanout = 17)       0.835               
+ CPU1/_al_u8424|biu/I_biu_cell/TLB/TLB_entry3/reg2_b22.f[1]  cell                    0.262
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b34|biu/I_biu_cell/L1/cache_entry3/reg1_b59.d[1] (CPU1/_al_u8424_o) net (fanout = 5)        0.926               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b34|biu/I_biu_cell/L1/cache_entry3/reg1_b59.f[1] cell                    0.262
+ CPU1/biu/I_biu_cell/L1/cache_entry1/reg1_b34|biu/I_biu_cell/L1/cache_entry1/reg1_b47.c[1] (CPU1/biu/I_pa[34]) net (fanout = 8)        1.060 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/biu/I_biu_cell/L1/cache_entry1/reg1_b34|biu/I_biu_cell/L1/cache_entry1/reg1_b47.f[1] cell                    0.348
+ CPU1/_al_u9726|biu/I_biu_cell/L1/cache_entry1/reg1_b30.c[1] (CPU1/_al_u9707_o) net (fanout = 1)        0.765               
+ CPU1/_al_u9726|biu/I_biu_cell/L1/cache_entry1/reg1_b30.f[1] cell                    0.348
+ CPU1/_al_u9779|_al_u9763.c[1] (CPU1/_al_u9726_o)            net (fanout = 3)        0.720               
+ CPU1/_al_u9779|_al_u9763.f[1]                               cell                    0.348
+ CPU1/_al_u10047|_al_u9947_placeOpt_3.a[1] (CPU1/_al_u9779_o) net (fanout = 7)        0.468               
+ CPU1/_al_u10047|_al_u9947_placeOpt_3.f[1]                   cell                    0.424
+ CPU1/_al_u10347|biu/I_biu_cell/TLB/TLB_entry3/reg1_b11.c[1] (CPU1/_al_u10047_o_placeOpt_3) net (fanout = 14)       0.811               
+ CPU1/_al_u10347|biu/I_biu_cell/TLB/TLB_entry3/reg1_b11.f[1] cell                    0.348
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.ce (CPU1/biu/I_biu_cell/TLB/TLB_entry1/n4[0]_en) net (fanout = 7)        1.231               
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8 path2reg                0.087
+ Arrival time                                                                       24.944 (18 lvl)
+                                                                                          (35% logic, 65% net)
+
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.clk                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.134
+ Required time                                                                      11.943
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -13.001 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -13.001 ns                                                       
+ StartPoint:              CPU1/_al_u2998|ins_dec/amo_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.ce (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/_al_u2998|ins_dec/amo_reg.clk                          clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/_al_u2998|ins_dec/amo_reg.q[0]                         cell                    0.146
+ CPU1/_al_u4626|_al_u3300.a[1] (CPU1/amo)                    net (fanout = 8)        0.737 ../../RTL/CPU/prv464_top.v(158)
+ CPU1/_al_u4626|_al_u3300.f[1]                               cell                    0.424
+ CPU1/_al_u4628|_al_u4760.d[1] (CPU1/_al_u4626_o)            net (fanout = 3)        1.010               
+ CPU1/_al_u4628|_al_u4760.f[1]                               cell                    0.262
+ CPU1/_al_u4703|_al_u4775.e[1] (CPU1/_al_u4628_o)            net (fanout = 52)       0.385               
+ CPU1/_al_u4703|_al_u4775.f[1]                               cell                    0.282
+ CPU1/_al_u5134|biu/D_biu_cell/TLB/TLB_entry2/reg2_b11.a[1] (CPU1/_al_u4703_o) net (fanout = 8)        1.782               
+ CPU1/_al_u5134|biu/D_biu_cell/TLB/TLB_entry2/reg2_b11.f[1]  cell                    0.424
+ CPU1/_al_u5136|biu/D_biu_cell/L1/cache_entry3/reg1_b23.b[0] (CPU1/biu/D_biu_cell/TLB/n28[11]) net (fanout = 1)        0.456               
+ CPU1/_al_u5136|biu/D_biu_cell/L1/cache_entry3/reg1_b23.f[0] cell                    0.431
+ CPU1/_al_u7506|biu/D_biu_cell/L1/cache_entry1/reg1_b21.c[0] (CPU1/biu/D_pa[23]) net (fanout = 13)       1.872 ../../RTL/CPU/BIU/biu.v(133)
+ CPU1/_al_u7506|biu/D_biu_cell/L1/cache_entry1/reg1_b21.f[0] cell                    0.348
+ CPU1/_al_u7967|biu/D_biu_cell/L1/cache_entry1/reg1_b26.c[1] (CPU1/_al_u7965_o) net (fanout = 1)        0.795               
+ CPU1/_al_u7967|biu/D_biu_cell/L1/cache_entry1/reg1_b26.f[1] cell                    0.348
+ CPU1/_al_u7975.b[0] (CPU1/_al_u7967_o)                      net (fanout = 2)        0.459               
+ CPU1/_al_u7975.fx[0]                                        cell                    0.543
+ CPU1/_al_u8021|_al_u8080.b[1] (CPU1/_al_u7975_o)            net (fanout = 10)       0.691               
+ CPU1/_al_u8021|_al_u8080.f[1]                               cell                    0.431
+ CPU1/_al_u8021|_al_u8080_placeOpt_4.d[0] (CPU1/_al_u8021_o) net (fanout = 10)       1.345               
+ CPU1/_al_u8021|_al_u8080_placeOpt_4.f[0]                    cell                    0.262
+ CPU1/_al_u8424|biu/I_biu_cell/TLB/TLB_entry3/reg2_b22.d[1] (CPU1/_al_u8080_o_placeOpt_4) net (fanout = 17)       0.835               
+ CPU1/_al_u8424|biu/I_biu_cell/TLB/TLB_entry3/reg2_b22.f[1]  cell                    0.262
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b34|biu/I_biu_cell/L1/cache_entry3/reg1_b59.d[1] (CPU1/_al_u8424_o) net (fanout = 5)        0.926               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b34|biu/I_biu_cell/L1/cache_entry3/reg1_b59.f[1] cell                    0.262
+ CPU1/biu/I_biu_cell/L1/cache_entry1/reg1_b34|biu/I_biu_cell/L1/cache_entry1/reg1_b47.c[1] (CPU1/biu/I_pa[34]) net (fanout = 8)        1.060 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/biu/I_biu_cell/L1/cache_entry1/reg1_b34|biu/I_biu_cell/L1/cache_entry1/reg1_b47.f[1] cell                    0.348
+ CPU1/_al_u9726|biu/I_biu_cell/L1/cache_entry1/reg1_b30.c[1] (CPU1/_al_u9707_o) net (fanout = 1)        0.765               
+ CPU1/_al_u9726|biu/I_biu_cell/L1/cache_entry1/reg1_b30.f[1] cell                    0.348
+ CPU1/_al_u9779|_al_u9763.c[1] (CPU1/_al_u9726_o)            net (fanout = 3)        0.720               
+ CPU1/_al_u9779|_al_u9763.f[1]                               cell                    0.348
+ CPU1/_al_u10047|_al_u9947_placeOpt_3.a[1] (CPU1/_al_u9779_o) net (fanout = 7)        0.468               
+ CPU1/_al_u10047|_al_u9947_placeOpt_3.f[1]                   cell                    0.424
+ CPU1/_al_u10347|biu/I_biu_cell/TLB/TLB_entry3/reg1_b11.c[1] (CPU1/_al_u10047_o_placeOpt_3) net (fanout = 14)       0.811               
+ CPU1/_al_u10347|biu/I_biu_cell/TLB/TLB_entry3/reg1_b11.f[1] cell                    0.348
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.ce (CPU1/biu/I_biu_cell/TLB/TLB_entry1/n4[0]_en) net (fanout = 7)        1.231               
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8 path2reg                0.087
+ Arrival time                                                                       24.944 (18 lvl)
+                                                                                          (35% logic, 65% net)
+
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.clk                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.134
+ Required time                                                                      11.943
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -13.001 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -12.899 ns                                                       
+ StartPoint:              CPU1/biu/I_biu_cell/L1/l1/cacheblk0/ram_memcell0_1024x8_sub_000000_000.clka (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.ce (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/biu/I_biu_cell/L1/l1/cacheblk0/ram_memcell0_1024x8_sub_000000_000.clka clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/biu/I_biu_cell/L1/l1/cacheblk0/ram_memcell0_1024x8_sub_000000_000.doa[1] cell                    3.245
+ CPU1/ins_fetch/reg1_b0|ins_fetch/reg1_b1.c[0] (CPU1/biu/I_biu_cell/L1/dout[1]) net (fanout = 1)        0.456 ../../RTL/CPU/BIU/cache/l1.v(101)
+ CPU1/ins_fetch/reg1_b0|ins_fetch/reg1_b1.f[0]               cell                    0.251
+ CPU1/_al_u2715|_al_u2702.c[0] (CPU1/ins_fetch/ins_shift[1]) net (fanout = 2)        0.757 ../../RTL/CPU/IF/ins_fetch.v(59)
+ CPU1/_al_u2715|_al_u2702.f[0]                               cell                    0.348
+ CPU1/_al_u2715|_al_u2702.a[1] (CPU1/_al_u2702_o)            net (fanout = 5)        0.171               
+ CPU1/_al_u2715|_al_u2702.f[1]                               cell                    0.424
+ CPU1/_al_u2911|_al_u6490.c[1] (CPU1/_al_u2715_o)            net (fanout = 29)       0.499               
+ CPU1/_al_u2911|_al_u6490.f[1]                               cell                    0.348
+ CPU1/_al_u8110|_al_u2916.c[1] (CPU1/ins_dec/n59_lutinv)     net (fanout = 61)       0.798               
+ CPU1/_al_u8110|_al_u2916.f[1]                               cell                    0.251
+ CPU1/_al_u8113|_al_u8134.d[1] (CPU1/pip_ctrl/n31)           net (fanout = 2)        0.468               
+ CPU1/_al_u8113|_al_u8134.f[1]                               cell                    0.262
+ CPU1/_al_u2555|exu/gpr_write_reg.d[0] (CPU1/_al_u8113_o)    net (fanout = 1)        0.594               
+ CPU1/_al_u2555|exu/gpr_write_reg.f[0]                       cell                    0.262
+ CPU1/_al_u8124|ins_fetch/reg0_b14.c[0] (CPU1/pip_ctrl/id_ex_war_lutinv) net (fanout = 3)        0.738 ../../RTL/CPU/PIP_CTRL/pip_ctrl.v(87)
+ CPU1/_al_u8124|ins_fetch/reg0_b14.f[0]                      cell                    0.251
+ CPU1/biu/I_biu_cell/TLB/TLB_entry2/reg2_b2|biu/I_biu_cell/TLB/TLB_entry2/reg2_b33.b[1] (CPU1/_al_u8126_o) net (fanout = 40)       1.309               
+ CPU1/biu/I_biu_cell/TLB/TLB_entry2/reg2_b2|biu/I_biu_cell/TLB/TLB_entry2/reg2_b33.f[1] cell                    0.431
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg2_b33|biu/I_biu_cell/TLB/TLB_entry1/reg2_b6.e[1] (CPU1/_al_u8349_o) net (fanout = 8)        0.485               
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg2_b33|biu/I_biu_cell/TLB/TLB_entry1/reg2_b6.f[1] cell                    0.282
+ CPU1/biu/I_biu_cell/TLB/TLB_entry0/reg2_b2|biu/I_biu_cell/TLB/TLB_entry0/reg2_b33.c[0] (CPU1/_al_u8363_o) net (fanout = 1)        0.594               
+ CPU1/biu/I_biu_cell/TLB/TLB_entry0/reg2_b2|biu/I_biu_cell/TLB/TLB_entry0/reg2_b33.f[0] cell                    0.348
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b45|biu/I_biu_cell/L1/cache_entry3/reg1_b52.c[1] (CPU1/_al_u8366_o) net (fanout = 3)        0.544               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b45|biu/I_biu_cell/L1/cache_entry3/reg1_b52.f[1] cell                    0.251
+ CPU1/_al_u10007|biu/L1_bus_unit/reg2_b45.a[1] (CPU1/biu/I_pa[45]) net (fanout = 11)       0.730 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/_al_u10007|biu/L1_bus_unit/reg2_b45.f[1]               cell                    0.408
+ CPU1/_al_u10011|biu/I_biu_cell/L1/cache_entry2/reg1_b44.c[0] (CPU1/_al_u10007_o) net (fanout = 1)        0.615               
+ CPU1/_al_u10011|biu/I_biu_cell/L1/cache_entry2/reg1_b44.f[0] cell                    0.348
+ CPU1/_al_u10045|biu/I_biu_cell/L1/cache_entry0/reg1_b40.a[1] (CPU1/_al_u10010_o) net (fanout = 2)        0.594               
+ CPU1/_al_u10045|biu/I_biu_cell/L1/cache_entry0/reg1_b40.f[1] cell                    0.424
+ CPU1/_al_u10046.b[1] (CPU1/_al_u10045_o)                    net (fanout = 2)        1.020               
+ CPU1/_al_u10046.fx[0]                                       cell                    0.543
+ CPU1/_al_u10047|_al_u9947_placeOpt_3.c[1] (CPU1/_al_u10046_o) net (fanout = 17)       0.781               
+ CPU1/_al_u10047|_al_u9947_placeOpt_3.f[1]                   cell                    0.348
+ CPU1/_al_u10347|biu/I_biu_cell/TLB/TLB_entry3/reg1_b11.c[1] (CPU1/_al_u10047_o_placeOpt_3) net (fanout = 14)       0.811               
+ CPU1/_al_u10347|biu/I_biu_cell/TLB/TLB_entry3/reg1_b11.f[1] cell                    0.348
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.ce (CPU1/biu/I_biu_cell/TLB/TLB_entry1/n4[0]_en) net (fanout = 7)        1.231               
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8 path2reg                0.087
+ Arrival time                                                                       24.923 (19 lvl)
+                                                                                          (48% logic, 52% net)
+
+ CPU1/biu/I_biu_cell/TLB/TLB_entry1/reg4_b10|biu/I_biu_cell/TLB/TLB_entry1/reg4_b8.clk                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.215
+ Required time                                                                      12.024
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -12.899 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point CPU1/ins_fetch/reg2_b43 (357429831 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -12.979 ns                                                       
+ StartPoint:              CPU1/_al_u2998|ins_dec/amo_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/ins_fetch/reg2_b43.d[1] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/_al_u2998|ins_dec/amo_reg.clk                          clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/_al_u2998|ins_dec/amo_reg.q[0]                         cell                    0.146
+ CPU1/_al_u4626|_al_u3300.a[1] (CPU1/amo)                    net (fanout = 8)        0.737 ../../RTL/CPU/prv464_top.v(158)
+ CPU1/_al_u4626|_al_u3300.f[1]                               cell                    0.424
+ CPU1/_al_u4628|_al_u4760.d[1] (CPU1/_al_u4626_o)            net (fanout = 3)        1.010               
+ CPU1/_al_u4628|_al_u4760.f[1]                               cell                    0.262
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.d[1] (CPU1/_al_u4628_o) net (fanout = 52)       1.187               
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.f[1] cell                    0.205
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.b[1] (CPU1/biu/D_biu_cell/TLB/TLB_entry0/n8_lutinv_placeOpt_5) net (fanout = 9)        0.171               
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.f[1]  cell                    0.431
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.c[1] (CPU1/_al_u5003_o) net (fanout = 2)        1.112               
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.fx[0]          cell                    0.448
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.b[1] (CPU1/biu/D_pa[37]) net (fanout = 19)       1.421 ../../RTL/CPU/BIU/biu.v(133)
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.f[1] cell                    0.431
+ CPU1/_al_u7505.d[1] (CPU1/biu/D_biu_cell/L1/eq2/xor_i0[26]_i1[26]_o_lutinv) net (fanout = 4)        0.769               
+ CPU1/_al_u7505.fx[0]                                        cell                    0.402
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.c[1] (CPU1/_al_u7505_o) net (fanout = 1)        0.827               
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.f[1] cell                    0.348
+ CPU1/_al_u7550|_al_u7542.b[1] (CPU1/_al_u7523_o)            net (fanout = 1)        0.757               
+ CPU1/_al_u7550|_al_u7542.f[1]                               cell                    0.431
+ CPU1/_al_u8175.d[1] (CPU1/_al_u7550_o)                      net (fanout = 3)        0.695               
+ CPU1/_al_u8175.fx[0]                                        cell                    0.402
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.c[1] (CPU1/_al_u8175_o) net (fanout = 16)       0.739               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.fx[0]          cell                    0.448
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.a[1] (CPU1/biu/I_pa[22]) net (fanout = 8)        0.781 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.f[1]                cell                    0.408
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.d[0] (CPU1/_al_u9662_o) net (fanout = 2)        0.738               
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.f[0] cell                    0.262
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.d[0] (CPU1/_al_u9917_o) net (fanout = 1)        0.608               
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.f[0] cell                    0.262
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.e[1] (CPU1/_al_u9919_o) net (fanout = 1)        0.689               
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.f[1] cell                    0.282
+ CPU1/_al_u9926.c[1] (CPU1/_al_u9921_o)                      net (fanout = 2)        0.738               
+ CPU1/_al_u9926.fx[0]                                        cell                    0.448
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.a[1] (CPU1/_al_u9926_o) net (fanout = 12)       1.170               
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.f[1]                   cell                    0.424
+ CPU1/ins_fetch/reg2_b43.d[1] (CPU1/_al_u10047_o_placeOpt_2) net (fanout = 26)       1.532 ../../RTL/CPU/prv464_top.v(84)
+ CPU1/ins_fetch/reg2_b43                                     path2reg0               0.509
+ Arrival time                                                                       24.922 (18 lvl)
+                                                                                          (38% logic, 62% net)
+
+ CPU1/ins_fetch/reg2_b43.clk                                                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.134
+ Required time                                                                      11.943
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -12.979 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -12.979 ns                                                       
+ StartPoint:              CPU1/_al_u2998|ins_dec/amo_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/ins_fetch/reg2_b43.d[1] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/_al_u2998|ins_dec/amo_reg.clk                          clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/_al_u2998|ins_dec/amo_reg.q[0]                         cell                    0.146
+ CPU1/_al_u4626|_al_u3300.a[1] (CPU1/amo)                    net (fanout = 8)        0.737 ../../RTL/CPU/prv464_top.v(158)
+ CPU1/_al_u4626|_al_u3300.f[1]                               cell                    0.424
+ CPU1/_al_u4628|_al_u4760.d[1] (CPU1/_al_u4626_o)            net (fanout = 3)        1.010               
+ CPU1/_al_u4628|_al_u4760.f[1]                               cell                    0.262
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.d[1] (CPU1/_al_u4628_o) net (fanout = 52)       1.187               
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.f[1] cell                    0.205
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.b[1] (CPU1/biu/D_biu_cell/TLB/TLB_entry0/n8_lutinv_placeOpt_5) net (fanout = 9)        0.171               
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.f[1]  cell                    0.431
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.c[1] (CPU1/_al_u5003_o) net (fanout = 2)        1.112               
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.fx[0]          cell                    0.448
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.b[1] (CPU1/biu/D_pa[37]) net (fanout = 19)       1.421 ../../RTL/CPU/BIU/biu.v(133)
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.f[1] cell                    0.431
+ CPU1/_al_u7505.d[1] (CPU1/biu/D_biu_cell/L1/eq2/xor_i0[26]_i1[26]_o_lutinv) net (fanout = 4)        0.769               
+ CPU1/_al_u7505.fx[0]                                        cell                    0.402
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.c[1] (CPU1/_al_u7505_o) net (fanout = 1)        0.827               
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.f[1] cell                    0.348
+ CPU1/_al_u7550|_al_u7542.b[1] (CPU1/_al_u7523_o)            net (fanout = 1)        0.757               
+ CPU1/_al_u7550|_al_u7542.f[1]                               cell                    0.431
+ CPU1/_al_u8175.d[1] (CPU1/_al_u7550_o)                      net (fanout = 3)        0.695               
+ CPU1/_al_u8175.fx[0]                                        cell                    0.402
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.c[1] (CPU1/_al_u8175_o) net (fanout = 16)       0.739               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.fx[0]          cell                    0.448
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.a[1] (CPU1/biu/I_pa[22]) net (fanout = 8)        0.781 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.f[1]                cell                    0.408
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.d[0] (CPU1/_al_u9662_o) net (fanout = 2)        0.738               
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.f[0] cell                    0.262
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.d[0] (CPU1/_al_u9917_o) net (fanout = 1)        0.608               
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.f[0] cell                    0.262
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.e[1] (CPU1/_al_u9919_o) net (fanout = 1)        0.689               
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.f[1] cell                    0.282
+ CPU1/_al_u9926.c[0] (CPU1/_al_u9921_o)                      net (fanout = 2)        0.738               
+ CPU1/_al_u9926.fx[0]                                        cell                    0.448
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.a[1] (CPU1/_al_u9926_o) net (fanout = 12)       1.170               
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.f[1]                   cell                    0.424
+ CPU1/ins_fetch/reg2_b43.d[1] (CPU1/_al_u10047_o_placeOpt_2) net (fanout = 26)       1.532 ../../RTL/CPU/prv464_top.v(84)
+ CPU1/ins_fetch/reg2_b43                                     path2reg0               0.509
+ Arrival time                                                                       24.922 (18 lvl)
+                                                                                          (38% logic, 62% net)
+
+ CPU1/ins_fetch/reg2_b43.clk                                                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.134
+ Required time                                                                      11.943
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -12.979 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -12.979 ns                                                       
+ StartPoint:              CPU1/_al_u2998|ins_dec/amo_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                CPU1/ins_fetch/reg2_b43.d[0] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ CPU1/_al_u2998|ins_dec/amo_reg.clk                          clock                   2.268
+ launch clock edge                                           clock                   0.000
+ CPU1/_al_u2998|ins_dec/amo_reg.q[0]                         cell                    0.146
+ CPU1/_al_u4626|_al_u3300.a[1] (CPU1/amo)                    net (fanout = 8)        0.737 ../../RTL/CPU/prv464_top.v(158)
+ CPU1/_al_u4626|_al_u3300.f[1]                               cell                    0.424
+ CPU1/_al_u4628|_al_u4760.d[1] (CPU1/_al_u4626_o)            net (fanout = 3)        1.010               
+ CPU1/_al_u4628|_al_u4760.f[1]                               cell                    0.262
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.d[1] (CPU1/_al_u4628_o) net (fanout = 52)       1.187               
+ CPU1/_al_u4630|biu/D_biu_cell/TLB/TLB_entry0/reg2_b20_placeOpt_5.f[1] cell                    0.205
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.b[1] (CPU1/biu/D_biu_cell/TLB/TLB_entry0/n8_lutinv_placeOpt_5) net (fanout = 9)        0.171               
+ CPU1/_al_u5003|biu/D_biu_cell/TLB/TLB_entry3/reg2_b25.f[1]  cell                    0.431
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.c[1] (CPU1/_al_u5003_o) net (fanout = 2)        1.112               
+ CPU1/biu/D_biu_cell/L1/cache_entry3/reg1_b37.fx[0]          cell                    0.448
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.b[1] (CPU1/biu/D_pa[37]) net (fanout = 19)       1.421 ../../RTL/CPU/BIU/biu.v(133)
+ CPU1/_al_u7502|biu/D_biu_cell/L1/cache_entry1/reg1_b37.f[1] cell                    0.431
+ CPU1/_al_u7505.d[1] (CPU1/biu/D_biu_cell/L1/eq2/xor_i0[26]_i1[26]_o_lutinv) net (fanout = 4)        0.769               
+ CPU1/_al_u7505.fx[0]                                        cell                    0.402
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.c[1] (CPU1/_al_u7505_o) net (fanout = 1)        0.827               
+ CPU1/_al_u7523|biu/D_biu_cell/L1/cache_entry2/reg1_b61.f[1] cell                    0.348
+ CPU1/_al_u7550|_al_u7542.b[1] (CPU1/_al_u7523_o)            net (fanout = 1)        0.757               
+ CPU1/_al_u7550|_al_u7542.f[1]                               cell                    0.431
+ CPU1/_al_u8175.d[1] (CPU1/_al_u7550_o)                      net (fanout = 3)        0.695               
+ CPU1/_al_u8175.fx[0]                                        cell                    0.402
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.c[1] (CPU1/_al_u8175_o) net (fanout = 16)       0.739               
+ CPU1/biu/I_biu_cell/L1/cache_entry3/reg1_b22.fx[0]          cell                    0.448
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.a[1] (CPU1/biu/I_pa[22]) net (fanout = 8)        0.781 ../../RTL/CPU/BIU/biu.v(120)
+ CPU1/_al_u9662|biu/L1_bus_unit/reg2_b22.f[1]                cell                    0.408
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.d[0] (CPU1/_al_u9662_o) net (fanout = 2)        0.738               
+ CPU1/_al_u10130|biu/I_biu_cell/L1/cache_entry1/reg1_b57.f[0] cell                    0.262
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.d[0] (CPU1/_al_u9917_o) net (fanout = 1)        0.608               
+ CPU1/_al_u9694|biu/I_biu_cell/L1/cache_entry2/reg1_b21.f[0] cell                    0.262
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.e[1] (CPU1/_al_u9919_o) net (fanout = 1)        0.689               
+ CPU1/_al_u9921|biu/I_biu_cell/L1/cache_entry0/reg1_b48.f[1] cell                    0.282
+ CPU1/_al_u9926.c[1] (CPU1/_al_u9921_o)                      net (fanout = 2)        0.738               
+ CPU1/_al_u9926.fx[0]                                        cell                    0.448
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.a[1] (CPU1/_al_u9926_o) net (fanout = 12)       1.170               
+ CPU1/_al_u10047|_al_u9947_placeOpt_2.f[1]                   cell                    0.424
+ CPU1/ins_fetch/reg2_b43.d[0] (CPU1/_al_u10047_o_placeOpt_2) net (fanout = 26)       1.532 ../../RTL/CPU/prv464_top.v(84)
+ CPU1/ins_fetch/reg2_b43                                     path2reg0               0.509
+ Arrival time                                                                       24.922 (18 lvl)
+                                                                                          (38% logic, 62% net)
+
+ CPU1/ins_fetch/reg2_b43.clk                                                         1.925
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.134
+ Required time                                                                      11.943
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                          -12.979 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l (7 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.170 ns                                                        
+ StartPoint:              APB1/APBSPI/spi_master_top/reg6_b3.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.a[1] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ APB1/APBSPI/spi_master_top/reg6_b3.clk                      clock                   1.925
+ launch clock edge                                           clock                   0.000
+ APB1/APBSPI/spi_master_top/reg6_b3.q[0]                     cell                    0.140
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.a[1] (APB1/APBSPI/spi_master_top/treg[3]) net (fanout = 5)        0.292 ../../RTL/Peripherals/APB/SPI/simple_spi_top.v(99)
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l            path2reg                0.000
+ Arrival time                                                                        2.357 (1 lvl)
+                                                                                          (88% logic, 12% net)
+
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.clk                                2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.215
+ Required time                                                                       2.187
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.170 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.170 ns                                                        
+ StartPoint:              APB1/APBSPI/spi_master_top/reg6_b6.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.d[1] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ APB1/APBSPI/spi_master_top/reg6_b6.clk                      clock                   1.925
+ launch clock edge                                           clock                   0.000
+ APB1/APBSPI/spi_master_top/reg6_b6.q[0]                     cell                    0.140
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.d[1] (APB1/APBSPI/spi_master_top/treg[6]) net (fanout = 5)        0.292 ../../RTL/Peripherals/APB/SPI/simple_spi_top.v(99)
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l            path2reg                0.000
+ Arrival time                                                                        2.357 (1 lvl)
+                                                                                          (88% logic, 12% net)
+
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.clk                                2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.215
+ Required time                                                                       2.187
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.170 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.294 ns                                                        
+ StartPoint:              APB1/APBSPI/spi_master_top/reg6_b4.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.b[1] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ APB1/APBSPI/spi_master_top/reg6_b4.clk                      clock                   1.925
+ launch clock edge                                           clock                   0.000
+ APB1/APBSPI/spi_master_top/reg6_b4.q[0]                     cell                    0.140
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.b[1] (APB1/APBSPI/spi_master_top/treg[4]) net (fanout = 5)        0.416 ../../RTL/Peripherals/APB/SPI/simple_spi_top.v(99)
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l            path2reg                0.000
+ Arrival time                                                                        2.481 (1 lvl)
+                                                                                          (84% logic, 16% net)
+
+ APB1/APBSPI/spi_master_top/rfifo/al_ram_mem_c1_l.clk                                2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.215
+ Required time                                                                       2.187
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.294 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l (9 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.213 ns                                                        
+ StartPoint:              _al_u1578|APB1/APBUART1/WB_UART/regs/tf_push_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.e[0] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1578|APB1/APBUART1/WB_UART/regs/tf_push_reg.clk        clock                   1.925
+ launch clock edge                                           clock                   0.000
+ _al_u1578|APB1/APBUART1/WB_UART/regs/tf_push_reg.q[0]       cell                    0.140
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.e[0] (APB1/APBUART1/WB_UART/regs/tf_push) net (fanout = 22)       0.335 ../../RTL/Peripherals/APB/UART/uart_regs.v(362)
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l path2reg                0.000
+ Arrival time                                                                        2.400 (1 lvl)
+                                                                                          (87% logic, 13% net)
+
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.215
+ Required time                                                                       2.187
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.213 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.316 ns                                                        
+ StartPoint:              APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b1.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.a[0] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b1.clk clock                   1.925
+ launch clock edge                                           clock                   0.000
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b1.q[1] cell                    0.140
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.a[0] (APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/top[0]) net (fanout = 4)        0.438 ../../RTL/Peripherals/APB/UART/uart_tfifo.v(178)
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l path2reg                0.000
+ Arrival time                                                                        2.503 (1 lvl)
+                                                                                          (83% logic, 17% net)
+
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.215
+ Required time                                                                       2.187
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.316 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.437 ns                                                        
+ StartPoint:              APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b1.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.b[0] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b1.clk clock                   1.925
+ launch clock edge                                           clock                   0.000
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/reg2_b1.q[0] cell                    0.140
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.b[0] (APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/top[1]) net (fanout = 4)        0.559 ../../RTL/Peripherals/APB/UART/uart_tfifo.v(178)
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l path2reg                0.000
+ Arrival time                                                                        2.624 (1 lvl)
+                                                                                          (79% logic, 21% net)
+
+ APB1/APBUART1/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c0_l.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.215
+ Required time                                                                       2.187
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.437 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l (9 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.201 ns                                                        
+ StartPoint:              _al_u1017|APB1/APBUART2/WB_UART/regs/tf_push_reg.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.e[0] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u1017|APB1/APBUART2/WB_UART/regs/tf_push_reg.clk        clock                   1.925
+ launch clock edge                                           clock                   0.000
+ _al_u1017|APB1/APBUART2/WB_UART/regs/tf_push_reg.q[0]       cell                    0.140
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.e[0] (APB1/APBUART2/WB_UART/regs/tf_push) net (fanout = 20)       0.323 ../../RTL/Peripherals/APB/UART/uart_regs.v(362)
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l path2reg                0.000
+ Arrival time                                                                        2.388 (1 lvl)
+                                                                                          (87% logic, 13% net)
+
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.215
+ Required time                                                                       2.187
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.201 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.266 ns                                                        
+ StartPoint:              APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b3.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.a[0] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b3.clk clock                   1.925
+ launch clock edge                                           clock                   0.000
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b0|APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b3.q[1] cell                    0.140
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.a[0] (APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/top[0]) net (fanout = 4)        0.281 ../../RTL/Peripherals/APB/UART/uart_tfifo.v(178)
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l path2reg                0.000
+ Arrival time                                                                        2.346 (1 lvl)
+                                                                                          (89% logic, 11% net)
+
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.322
+ Required time                                                                       2.080
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.266 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       0.277 ns                                                        
+ StartPoint:              APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b1|APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b2.clk (rising edge triggered by clock mainclk)
+ EndPoint:                APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.c[0] (rising edge triggered by clock mainclk)
+ Clock group:             mainclk                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b1|APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b2.clk clock                   1.925
+ launch clock edge                                           clock                   0.000
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b1|APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/reg2_b2.q[0] cell                    0.140
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.c[0] (APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/top[2]) net (fanout = 4)        0.292 ../../RTL/Peripherals/APB/UART/uart_tfifo.v(178)
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l path2reg                0.000
+ Arrival time                                                                        2.357 (1 lvl)
+                                                                                          (88% logic, 12% net)
+
+ APB1/APBUART2/WB_UART/regs/transmitter/fifo_tx/tfifo/al_ram_ram_c1_l.clk                         2.268
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.134
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.322
+ Required time                                                                       2.080
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.277 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: more than 1,000,000,000 (STA coverage = 97.21%)
+Timing violations: 4519 setup errors, and 0 hold errors.
+Minimal setup slack: -13.269, minimal hold slack: 0.065
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  mainclk (100.000MHz)                          23.269ns      42.976MHz        0.399ns      4669   -21079.623ns
+	  GCLKIN (50.000MHz)                             1.922ns     520.291MHz        1.692ns        54        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
+Warning: there are 2 clock nets without clock constraints.
+	APB1/APB_BRIDGE1/n36
+	APB1/APB_BRIDGE1/n38
+
+---------------------------------------------------------------------------------------------------------

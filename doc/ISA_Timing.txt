@@ -1,0 +1,11 @@
+{signal: [
+  {name: 'BCLK', wave: 'p.....|...'},
+  {name: 'AEN', wave: '10...1|...'},
+  {name: 'ALE', wave: '0.10..|1.0'},
+  {name: 'LSA', wave: 'x3...x|=.x', data: ['Address']},
+  {name: 'SBHE', wave: '0.x...|1.0'},
+  {name: 'DAT', wave: 'x..45x|=.x', data: ['head', 'body', 'tail', 'data']},
+  
+  {name: 'CHCS', wave: '0.1..0|1.0'},
+  {name: 'IOCHRDY', wave: '1.....|01.'}
+]}

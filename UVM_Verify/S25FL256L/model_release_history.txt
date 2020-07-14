@@ -1,0 +1,68 @@
+##########################################
+Date (DD/MM/YYYY)  - 24/08/2015
+
+Model name         - S25FL256L
+
+Vendor             - Spansion
+
+Publication ID     -  FL-L DRS v7.9 STD 17Nov14.pdf Issue date Nov 17,2014
+
+VITAL model author -  Marko Stojanovic
+                      m-stojanovic@hdl-dh.com
+##########################################
+##########################################
+# Release Label             => vital-amd-REL-s25fl256l-2015-08-24-1.tar.gz
+# Release Date (DD/MM/YYYY) => 24/08/2015
+# Release Version           => 1.0
+
+##########################################
+RELEASE 1.1
+
+# Release Label             => vital-amd-REL-s25fl256l-2016-02-24-2.tar.gz
+# Release Date (DD/MM/YYYY) => 24/02/2016
+# Release Version           => 1.1
+
+# Corrections:
+- Added VHDL model files
+- Corrected timing values
+
+# Files added
+- s25fl256l.vhd
+- s25fl256l_vhdl.sdf
+- testbench_s25fl256l_vhdl.vhd
+
+# Files modified
+- s25fl256l.v
+- s25fl256l_verilog.sdf
+- s25fl256l.ftmv
+- s25fl256l.ftm
+- spansion_tc_pkg.vhd
+##########################################
+RELEASE 1.2
+
+# Release Label             => vital-amd-REL-s25fl256l-2017-03-16-1.tar.gz
+# Release Date (DD/MM/YYYY) => 16/03/2017
+# Release Version           => 1.2
+
+# Corrections:
+- Fixed bug 3439 - four byte address commands depend on CR2V(0)
+
+# Files modified
+- s25fl256l.v
+- s25fl256l.vhd
+##########################################
+
+##########################################
+RELEASE 1.3
+
+# Release Label             => vital-amd-REL-s25fl256l-2018-06-08-1.tar.gz
+# Release Date (DD/MM/YYYY) => 08/06/2018
+# Release Version           => 1.3
+
+# Corrections:
+- Fixed bug 18 -  added !CSNeg condition for two model instances
+# Files modified
+- s25fl256l.v
+- spansion_tc_pkg.vhd
+- testbench_s25fl256l_verilog.vhd
+##########################################

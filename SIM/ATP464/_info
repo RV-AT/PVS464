@@ -1,0 +1,717 @@
+m255
+K4
+z2
+!s11f vlog 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modeltech64_2019.4/examples
+T_opt
+!s110 1586163136
+VCh0eFfP_FNb>IMGo^MSj_3
+Z1 04 9 4 work AHB64_ATP fast 0
+=1-1063c8aee2cb-5e8aedc0-208-8cc
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2019.4;69
+R0
+T_opt1
+!s110 1586169745
+V[[LNaL]H>ebSDo738I3D^3
+R1
+=1-1063c8aee2cb-5e8b0791-56-3930
+R2
+R3
+n@_opt1
+OL;O;10.5;63
+R0
+vAHB64_ATP
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2mB`g?]MGOP68@VGk17MG3
+I0zl4l:i^EFk1IY[YW?Kn82
+Z5 dD:/Projects/FPGA/PVS464/SIM
+w1587020341
+8D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB64_ATP.v
+FD:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB64_ATP.v
+L0 8
+Z6 OL;L;10.5;63
+!s108 1587020346.000000
+!s107 D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB64_ATP.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB64_ATP.v|
+!i113 0
+Z7 o-work ATP464 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@a@h@b64_@a@t@p
+vahb_decoder
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 h1]]ajZ_MUR5kDZVeO1[L2
+I;c[O6iU:RQEDNbhWQD<PR0
+R5
+w1587018865
+8D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_decoder.v
+FD:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_decoder.v
+L0 18
+R6
+Z8 !s108 1587019866.000000
+!s107 D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_decoder.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_decoder.v|
+!i113 0
+R7
+R3
+vAHB_DUMMY
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 lOV?@eDfj9oE5WI7W5nkh2
+Im=82nH2D00O>Va[J]86dg3
+R5
+w1586168639
+8D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_DUMMY.v
+FD:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_DUMMY.v
+L0 4
+R6
+Z9 !s108 1587019870.000000
+!s107 D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_DUMMY.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_DUMMY.v|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@a@h@b_@d@u@m@m@y
+vAHB_ESRAM
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]2Q8A?`aoYJERCBkPERiE1
+I<VQj?g3<M_XHJLnHEN5K@0
+R5
+w1587019486
+8D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_ESRAM.v
+FD:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_ESRAM.v
+L0 11
+R6
+R8
+!s107 D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_ESRAM.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_ESRAM.v|
+!i113 0
+R7
+R3
+n@a@h@b_@e@s@r@a@m
+vahb_mux_s2m
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 lF=f0X6_5gWUAIJ_W;KUU1
+Icg2J=g;[K;f6=RNZ<WG7]1
+R5
+w1587020057
+8D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_mux_s2m.v
+FD:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_mux_s2m.v
+Z11 L0 34
+R6
+!s108 1587020086.000000
+!s107 D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_mux_s2m.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_mux_s2m.v|
+!i113 0
+R7
+R3
+vahb_reset_ctrl
+!s110 1587019867
+!i10b 1
+!s100 jHC>[0M2N5]<X3fOkMiE=3
+IPze0zFAdBVC]Dli9`;E9C0
+R4
+R5
+w1439410093
+8D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_reset_ctrl.v
+FD:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_reset_ctrl.v
+R11
+R6
+r1
+!s85 0
+31
+R8
+!s107 D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_reset_ctrl.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/ahb_reset_ctrl.v|
+!i113 0
+R7
+R3
+vAHB_ROM
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 HG^ZO4]5_UP8AOnRWd?aZ0
+If?fhQF8]i5<7i1Wa4F8[70
+R5
+w1586168823
+8D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_ROM.v
+FD:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_ROM.v
+L0 4
+R6
+Z12 !s108 1587019867.000000
+!s107 D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_ROM.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/SIM/AHB_ATP/AHB_ROM.v|
+!i113 0
+R7
+R3
+n@a@h@b_@r@o@m
+valu_au
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 UK76l4J8>Iig<M1BR6JDj3
+IQaaEo=GJY4Q43M?09HK7_3
+R5
+w1586426446
+8D:/Projects/FPGA/PVS464/RTL/CPU/EX/ALU&AU/alu_au.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/EX/ALU&AU/alu_au.v
+L0 1
+R6
+Z13 !s108 1587019868.000000
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/EX/ALU&AU/alu_au.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/EX/ALU&AU/alu_au.v|
+!i113 0
+R7
+R3
+vbiu
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 5gUHP09ade`zEA?GQTCY<0
+I>z@zE7>nkGl@Uz;A_a>;`3
+R5
+w1586943270
+8D:/Projects/FPGA/PVS464/RTL/CPU/BIU/biu.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/BIU/biu.v
+L0 8
+R6
+R12
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/BIU/biu.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/BIU/biu.v|
+!i113 0
+R7
+R3
+vBOOTROM64
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 f>`1bE<bmH;;B`0j<]TMa2
+Ik1XJzefUK611WAg;lBj=O3
+R5
+w1587008561
+8D:\Projects\FPGA\PVS464\RTL\SIM\AHB_ATP\BOOTROM64.v
+FD:\Projects\FPGA\PVS464\RTL\SIM\AHB_ATP\BOOTROM64.v
+L0 7
+R6
+R12
+!s107 D:\Projects\FPGA\PVS464\RTL\SIM\AHB_ATP\BOOTROM64.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:\Projects\FPGA\PVS464\RTL\SIM\AHB_ATP\BOOTROM64.v|
+!i113 0
+R7
+R3
+n@b@o@o@t@r@o@m64
+vbus_unit
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 S_KZaJj@mDlCZA]cM@9mL0
+IEU=79<;e4i:2nzON?oH483
+R5
+w1586947877
+8D:/Projects/FPGA/PVS464/RTL/CPU/BIU/bus_unit.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/BIU/bus_unit.v
+L0 1
+R6
+R12
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/BIU/bus_unit.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/BIU/bus_unit.v|
+!i113 0
+R7
+R3
+vcache
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 2ZBJ7KH2B_1H9ZH;S_b2K2
+IJ>NI6o84EkS3E]BN3:@H80
+R5
+w1586947888
+8D:/Projects/FPGA/PVS464/RTL/CPU/BIU/cache.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/BIU/cache.v
+L0 1
+R6
+R12
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/BIU/cache.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/BIU/cache.v|
+!i113 0
+R7
+R3
+vcache_ctrl_logic
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^:j8cm7B9ke@Y61o0BL?H2
+I__7Tl2k5>Jj`L[;K51zXA0
+R5
+w1587011279
+8D:/Projects/FPGA/PVS464/RTL/CPU/BIU/cache_ctrl_logic.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/BIU/cache_ctrl_logic.v
+L0 5
+R6
+R12
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/BIU/cache_ctrl_logic.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/BIU/cache_ctrl_logic.v|
+!i113 0
+R7
+R3
+vcsr_satp
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 R??HJN_?<bVS[zb9=[I]^3
+IUF^3bdKhTEHk7nOi80VP92
+R5
+w1585559697
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/csr_satp.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/csr_satp.v
+L0 1
+R6
+R13
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/csr_satp.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/csr_satp.v|
+!i113 0
+R7
+R3
+vcu_ru
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 Hl3:mDmPRiP>G93U:eTCW3
+IF]@84E[oebM28MnKSI;[^0
+R5
+w1586324015
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/cu_ru.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/cu_ru.v
+L0 7
+R6
+R13
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/cu_ru.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/cu_ru.v|
+!i113 0
+R7
+R3
+vexu
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 EXA0g<gTnCIlh;YiVbEK`2
+IjfCJiab_L<W?dfBX8RlCa1
+R5
+w1587001363
+8D:/Projects/FPGA/PVS464/RTL/CPU/EX/exu.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/EX/exu.v
+L0 5
+R6
+R13
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/EX/exu.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/EX/exu.v|
+!i113 0
+R7
+R3
+vins_dec
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 n^gcmUY:WmBS]CI1Z>ee<2
+IT1Qf^Wl_cY49^R]W[O3JA1
+R5
+w1586947105
+8D:/Projects/FPGA/PVS464/RTL/CPU/ID/ins_dec.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/ID/ins_dec.v
+L0 4
+R6
+Z14 !s108 1587019869.000000
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/ID/ins_dec.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/ID/ins_dec.v|
+!i113 0
+R7
+R3
+vins_fetch
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 klRLI2WXD3L086BTX7z;>1
+IhT>zD8dW`NF6eU^jz_m`?0
+R5
+w1586270039
+8D:/Projects/FPGA/PVS464/RTL/CPU/IF/ins_fetch.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/IF/ins_fetch.v
+L0 7
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/IF/ins_fetch.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/IF/ins_fetch.v|
+!i113 0
+R7
+R3
+vlsu
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 V1^>LNX09;^h1mgaeB_6S3
+IH]Vj<02V62P;2UN?`UMaV1
+R5
+w1585298946
+8D:/Projects/FPGA/PVS464/RTL/CPU/EX/LSU/lsu.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/EX/LSU/lsu.v
+L0 3
+R6
+R13
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/EX/LSU/lsu.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/EX/LSU/lsu.v|
+!i113 0
+R7
+R3
+vm_cycle_event
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 i_LT:?>d1jY[EUXPJ0o160
+IIKUDM`Z3U][=gjRL4XBb:0
+R5
+w1585557364
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_cycle_event.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_cycle_event.v
+L0 1
+R6
+R13
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_cycle_event.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_cycle_event.v|
+!i113 0
+R7
+R3
+vm_s_cause
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 E]]zm?ZLia6@bbZH1>HVF2
+IKB7[<zJVf3`G^RV5A6D`S2
+R5
+Z15 w1585557363
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_cause.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_cause.v
+L0 1
+R6
+R13
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_cause.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_cause.v|
+!i113 0
+R7
+R3
+vm_s_epc
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 B34;_:dVNEbgW8P5fGX^Y0
+IEH]T7Gc[K_J9`=[_:^j6A2
+R5
+R15
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_epc.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_epc.v
+L0 1
+R6
+R13
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_epc.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_epc.v|
+!i113 0
+R7
+R3
+vm_s_ie
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 nDHQ_>Q5a=7?9Q]z6UiFA3
+I=RBFCONoVP8]@Y4gd2ddS1
+R5
+w1585557424
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_ie.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_ie.v
+L0 1
+R6
+R13
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_ie.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_ie.v|
+!i113 0
+R7
+R3
+vm_s_ip
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 :aSB@5D9f9>WQLdzZlhnY1
+I]X`gBc=@Q8_NeiITzQIcU3
+R5
+w1585557362
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_ip.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_ip.v
+L0 4
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_ip.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_ip.v|
+!i113 0
+R7
+R3
+vm_s_scratch
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 6=QL[?l7n<efbcEQ<heFa0
+IDQ]@86V8[c>V?o3NQ@1YQ1
+R5
+w1585546845
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_scratch.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_scratch.v
+L0 1
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_scratch.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_scratch.v|
+!i113 0
+R7
+R3
+vm_s_status
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 [n?;MkF]a7VMSkzo`I[Z41
+IzoD?PkIam;YUnbea=Po?I3
+R5
+w1586174141
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_status.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_status.v
+L0 4
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_status.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_status.v|
+!i113 0
+R7
+R3
+vm_s_tval
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 YAAAHhn9hXa1lOak=2S8B3
+IKDXzInV;49C>Z1:XM0@302
+R5
+w1585557361
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_tval.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_tval.v
+L0 1
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_tval.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_tval.v|
+!i113 0
+R7
+R3
+vm_s_tvec
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 EPPijGZPCkB452MZT:VO]1
+I842?E8Y:D=gHI5W1fbWCA2
+R5
+w1585557360
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_tvec.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_tvec.v
+L0 4
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_tvec.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/m_s_tvec.v|
+!i113 0
+R7
+R3
+vmedeleg_exc_ctrl
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^lVQT=Gng3=b`aeQ6dgk>2
+IA?0jT33[i5c0JkINM<FcE1
+R5
+w1585559320
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/medeleg_exc_ctrl.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/medeleg_exc_ctrl.v
+L0 1
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/medeleg_exc_ctrl.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/medeleg_exc_ctrl.v|
+!i113 0
+R7
+R3
+vmideleg_int_ctrl
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 FKj9M]hDTOZ_Af3QSfde>3
+I1NN75]L`7ch]dmJ6]47H=0
+R5
+w1585560138
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/mideleg_int_ctrl.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/mideleg_int_ctrl.v
+L0 3
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/mideleg_int_ctrl.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/mideleg_int_ctrl.v|
+!i113 0
+R7
+R3
+vmmu
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 h`S;Un0=2KRLZXcV>TU`K1
+IB[_aBhAKz59lfd<M;[MWP1
+R5
+w1586947897
+8D:/Projects/FPGA/PVS464/RTL/CPU/BIU/mmu.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/BIU/mmu.v
+L0 4
+R6
+R12
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/BIU/mmu.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/BIU/mmu.v|
+!i113 0
+R7
+R3
+vmro_csr
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 Hom8LBXGbN8IkRiIkA>Y?3
+IO5iPIcf9l=jN2JmQZza1l3
+R5
+w1586948130
+8D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/mro_csr.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/mro_csr.v
+L0 4
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/mro_csr.v|
+!s90 -reportprogress|300|-work|ATP464|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/CU&RU/csrs/mro_csr.v|
+!i113 0
+R7
+R3
+vpip_ctrl
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 5@W_Fe1^ilW<hBlgGLNmO0
+IGS^W[^gLz@_7oKcm_zNXL2
+R5
+w1586396447
+8D:/Projects/FPGA/PVS464/RTL/CPU/PIP_CTRL/pip_ctrl.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/PIP_CTRL/pip_ctrl.v
+L0 5
+R6
+R9
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/PIP_CTRL/pip_ctrl.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/PIP_CTRL/pip_ctrl.v|
+!i113 0
+R10
+R3
+vprv464_top
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 zTC2mM70^JQHfHQ99[R^M1
+I5SO_BK=4FXMS?IFEL01hN0
+R5
+w1586948420
+8D:/Projects/FPGA/PVS464/RTL/CPU/prv464_top.v
+FD:/Projects/FPGA/PVS464/RTL/CPU/prv464_top.v
+L0 15
+R6
+R14
+!s107 D:/Projects/FPGA/PVS464/RTL/CPU/prv464_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Projects/FPGA/PVS464/RTL/CPU/prv464_top.v|
+!i113 0
+R10
+R3

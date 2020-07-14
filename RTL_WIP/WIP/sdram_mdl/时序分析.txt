@@ -1,0 +1,17 @@
+取Tdata-pcb=0.125ns,Tclk-pcb=0.125ns;
+
+
+input delay：
+SDRAM时钟sdram_clk的上升沿为launch edge，而FPGA时钟clk_100m上升沿为latch edge。那么有：-2ns<tco<4.5ns
+
+input max delay = 4.5ns+0.125ns-0.125ns=4.5ns
+input min delay = -2ns+0.125ns-0.125ns=-2ns
+
+output delay:
+FPGA时钟clk_100m上升沿为launch edge,而SDRAM时钟sdram_clk的上升沿为latch edge。那么有：Tsu=1.5ns,Th=1ns
+
+output max delay = 1.5ns+0.125ns-0.125ns=1.5ns
+output min delay = -(1ns-0.125ns-0.125ns)=-0.75ns
+
+
+

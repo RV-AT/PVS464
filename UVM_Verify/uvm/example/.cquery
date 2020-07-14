@@ -1,0 +1,11 @@
+%clang
+%cpp -std=gnu++14
+-pthread
+
+# Includes
+-I/tools/verilator/include
+-I/tools/systemc/include
+-I/tools/systemc/src
+-I/tools/systemc
+-I/tools/work/sysGears/systemc/rtl/obj_dir
+-I/tools/uvm_systemc/include

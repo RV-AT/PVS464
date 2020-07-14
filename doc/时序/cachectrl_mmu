@@ -1,0 +1,19 @@
+{signal: [
+  {name: 'clk', wave: 'p.....|........................'},
+  {name: 'maddress', wave: 'x3x|xx|3x|xxxxxxxx|3x|3', data: ['VA0', 'PA1', 'PA2', 'PA0']},
+  {name: 'paddress', wave: 'xxxx3x|xx|', data :['PA0']},
+  {name: 'paddr', wave:'0..|..|10|........|..|10'},
+  {name: 'wr', wave:'010|'},
+  {name: 'rd', wave:'0..|..|..|........|..|10'},
+  {name: 'sync_mem', wave:'0..|..|10|........|..|'},
+  {name: 'size', wave:'0', data:['']},
+  {name: 'cacheable', wave:'0..|10|'},
+  {name: 'trans_rdy', wave:'0..|10|..|1.01....|.0|.1.'},
+  {name: 'trans_over', wave:'0'},
+  {name: 'cache_rdy', wave:'0..|..|1.|.....01.|.0|1..'},
+  {name: 'read_data', wave:'xxx|3x|', data:['PI']},
+  {name: 'write_data', wave:'xxx|xx|x4|.34.5x345|x|3.45', data:['D0','D1','D2','D3','D4','D5','Dn','D0','D1']},
+  
+  {name: 'page_fault', wave: '0'},
+  {name: 'bus_error', wave: '0'}
+]}

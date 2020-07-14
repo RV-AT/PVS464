@@ -1,0 +1,44 @@
+verbose
+***Report Model: PVS464_Top***
+
+IO Statistics
+#IO                   108
+  #input               13
+  #output              32
+  #inout               63
+
+Utilization Statistics
+#mslice              3411   out of   4900   69.61%
+  #mreg              2611
+  #mle               6820
+#lslice              3412   out of   4900   69.63%
+  #lreg              3240
+  #lle               6822
+#plb                    0   out of   2450    0.00%
+#lut                13642   out of  19600   69.60%
+#reg                 5851   out of  19600   29.85%
+  #gsrn               753
+#le                 13642
+  #lut only          7791   out of  13642   57.11%
+  #reg only             0   out of  13642    0.00%
+  #lut&reg           5851   out of  13642   42.89%
+#dsp                    0   out of     29    0.00%
+#bram                  16   out of     64   25.00%
+  #bram9k              16
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                  118   out of    130   90.77%
+  #ireg                20
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance  |Module     |le    |lut   |seq   |
++-------------------------------------------+
+|top       |PVS464_Top |13642 |13642 |5851  |
+|  CPU1    |prv464_top |10370 |10370 |4223  |
+|  PSRAM1  |AHB_PSRAM  |344   |344   |195   |
+|  XIPROM1 |AHB_XIP    |414   |414   |156   |
++-------------------------------------------+

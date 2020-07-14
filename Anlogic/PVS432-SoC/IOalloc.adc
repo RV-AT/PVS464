@@ -1,0 +1,120 @@
+set_pin_assignment	{ ECINT }	{ LOCATION = P139; }
+set_pin_assignment	{ FAEN }	{ LOCATION = P14; }
+set_pin_assignment	{ FBD[0] }	{ LOCATION = P41; }
+set_pin_assignment	{ FBD[10] }	{ LOCATION = P27; }
+set_pin_assignment	{ FBD[11] }	{ LOCATION = P26; }
+set_pin_assignment	{ FBD[12] }	{ LOCATION = P25; }
+set_pin_assignment	{ FBD[13] }	{ LOCATION = P23; }
+set_pin_assignment	{ FBD[14] }	{ LOCATION = P22; }
+set_pin_assignment	{ FBD[15] }	{ LOCATION = P17; }
+set_pin_assignment	{ FBD[1] }	{ LOCATION = P39; }
+set_pin_assignment	{ FBD[2] }	{ LOCATION = P37; }
+set_pin_assignment	{ FBD[3] }	{ LOCATION = P36; }
+set_pin_assignment	{ FBD[4] }	{ LOCATION = P35; }
+set_pin_assignment	{ FBD[5] }	{ LOCATION = P32; }
+set_pin_assignment	{ FBD[6] }	{ LOCATION = P31; }
+set_pin_assignment	{ FBD[7] }	{ LOCATION = P30; }
+set_pin_assignment	{ FBD[8] }	{ LOCATION = P29; }
+set_pin_assignment	{ FBD[9] }	{ LOCATION = P28; }
+set_pin_assignment	{ FCLK }	{ LOCATION = P19; }
+set_pin_assignment	{ FCS }	{ LOCATION = P16; }
+set_pin_assignment	{ FDRQ }	{ LOCATION = P8; }
+set_pin_assignment	{ FERR }	{ LOCATION = P2; }
+set_pin_assignment	{ FINT }	{ LOCATION = P11; }
+set_pin_assignment	{ FSIZ }	{ LOCATION = P3; }
+set_pin_assignment	{ FTR[0] }	{ LOCATION = P6; }
+set_pin_assignment	{ FTR[1] }	{ LOCATION = P4; }
+set_pin_assignment	{ FWR }	{ LOCATION = P15; }
+set_pin_assignment	{ GCLK }	{ LOCATION = P89; PULLTYPE = NONE; }
+set_pin_assignment	{ GPIOA[0] }	{ LOCATION = P93; }
+set_pin_assignment	{ GPIOA[1] }	{ LOCATION = P91; }
+set_pin_assignment	{ GPIOA[2] }	{ LOCATION = P90; }
+set_pin_assignment	{ LVDSC }	{ LOCATION = P131; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ LVDSR[0] }	{ LOCATION = P121; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ LVDSR[1] }	{ LOCATION = P124; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ LVDSR[2] }	{ LOCATION = P126; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ LVDSR[3] }	{ LOCATION = P130; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ LVDST[0] }	{ LOCATION = P100; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ LVDST[1] }	{ LOCATION = P103; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ LVDST[2] }	{ LOCATION = P106; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ LVDST[3] }	{ LOCATION = P111; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ MCLK }	{ LOCATION = P88; }
+set_pin_assignment	{ MCS[0] }	{ LOCATION = P94; }
+set_pin_assignment	{ MCS[1] }	{ LOCATION = P95; }
+set_pin_assignment	{ MCS[2] }	{ LOCATION = P133; }
+set_pin_assignment	{ MCS[3] }	{ LOCATION = P136; }
+set_pin_assignment	{ MCS[4] }	{ LOCATION = P138; }
+set_pin_assignment	{ MCS[5] }	{ LOCATION = P141; }
+set_pin_assignment	{ MCS[6] }	{ LOCATION = P143; }
+set_pin_assignment	{ MCS[7] }	{ LOCATION = P144; }
+set_pin_assignment	{ MDAT[0] }	{ LOCATION = P69; }
+set_pin_assignment	{ MDAT[10] }	{ LOCATION = P79; }
+set_pin_assignment	{ MDAT[11] }	{ LOCATION = P81; }
+set_pin_assignment	{ MDAT[12] }	{ LOCATION = P82; }
+set_pin_assignment	{ MDAT[13] }	{ LOCATION = P83; }
+set_pin_assignment	{ MDAT[14] }	{ LOCATION = P84; }
+set_pin_assignment	{ MDAT[15] }	{ LOCATION = P86; }
+set_pin_assignment	{ MDAT[16] }	{ LOCATION = P145; }
+set_pin_assignment	{ MDAT[17] }	{ LOCATION = P146; }
+set_pin_assignment	{ MDAT[18] }	{ LOCATION = P147; }
+set_pin_assignment	{ MDAT[19] }	{ LOCATION = P148; }
+set_pin_assignment	{ MDAT[1] }	{ LOCATION = P70; }
+set_pin_assignment	{ MDAT[20] }	{ LOCATION = P149; }
+set_pin_assignment	{ MDAT[21] }	{ LOCATION = P150; }
+set_pin_assignment	{ MDAT[22] }	{ LOCATION = P151; }
+set_pin_assignment	{ MDAT[23] }	{ LOCATION = P152; }
+set_pin_assignment	{ MDAT[24] }	{ LOCATION = P153; }
+set_pin_assignment	{ MDAT[25] }	{ LOCATION = P155; }
+set_pin_assignment	{ MDAT[26] }	{ LOCATION = P156; }
+set_pin_assignment	{ MDAT[27] }	{ LOCATION = P157; }
+set_pin_assignment	{ MDAT[28] }	{ LOCATION = P158; }
+set_pin_assignment	{ MDAT[29] }	{ LOCATION = P159; }
+set_pin_assignment	{ MDAT[2] }	{ LOCATION = P71; }
+set_pin_assignment	{ MDAT[30] }	{ LOCATION = P161; }
+set_pin_assignment	{ MDAT[31] }	{ LOCATION = P162; }
+set_pin_assignment	{ MDAT[3] }	{ LOCATION = P72; }
+set_pin_assignment	{ MDAT[4] }	{ LOCATION = P73; }
+set_pin_assignment	{ MDAT[5] }	{ LOCATION = P74; }
+set_pin_assignment	{ MDAT[6] }	{ LOCATION = P75; }
+set_pin_assignment	{ MDAT[7] }	{ LOCATION = P76; }
+set_pin_assignment	{ MDAT[8] }	{ LOCATION = P77; }
+set_pin_assignment	{ MDAT[9] }	{ LOCATION = P78; }
+set_pin_assignment	{ MISO }	{ LOCATION = P58; }
+set_pin_assignment	{ MOSI }	{ LOCATION = P57; }
+set_pin_assignment	{ QCLK }	{ LOCATION = P174; }
+set_pin_assignment	{ QCSN }	{ LOCATION = P163; }
+set_pin_assignment	{ QPIO[0] }	{ LOCATION = P173; }
+set_pin_assignment	{ QPIO[1] }	{ LOCATION = P169; }
+set_pin_assignment	{ QPIO[2] }	{ LOCATION = P170; }
+set_pin_assignment	{ QPIO[3] }	{ LOCATION = P176; }
+set_pin_assignment	{ RST_N }	{ LOCATION = P42; }
+set_pin_assignment	{ SCL }	{ LOCATION = P66; }
+set_pin_assignment	{ SCLK }	{ LOCATION = P60; }
+set_pin_assignment	{ SCS }	{ LOCATION = P61; PULLTYPE = PULLUP; }
+set_pin_assignment	{ SDA }	{ LOCATION = P68; }
+set_pin_assignment	{ SDCLK }	{ LOCATION = P53; }
+set_pin_assignment	{ SDCMD }	{ LOCATION = P54; }
+set_pin_assignment	{ SDDAT[0] }	{ LOCATION = P52; }
+set_pin_assignment	{ SDDAT[1] }	{ LOCATION = P51; }
+set_pin_assignment	{ SDDAT[2] }	{ LOCATION = P56; }
+set_pin_assignment	{ SDDAT[3] }	{ LOCATION = P55; }
+set_pin_assignment	{ SSEL[0] }	{ LOCATION = P64; }
+set_pin_assignment	{ SSEL[1] }	{ LOCATION = P63; }
+set_pin_assignment	{ SSEL[2] }	{ LOCATION = P62; }
+set_pin_assignment	{ UART0_RX }	{ LOCATION = P118; }
+set_pin_assignment	{ UART0_TX }	{ LOCATION = P119; }
+set_pin_assignment	{ UART1_RX }	{ LOCATION = P114; }
+set_pin_assignment	{ UART1_TX }	{ LOCATION = P115; }
+set_pin_assignment	{ USB }	{ LOCATION = P50; IOSTANDARD = LVDS33_E; }
+
+
+
+
+
+#Region Constraint
+create_bound bound1 -mode auto -auto_effort high 
+add_cells_to_bound -bound bound1 -cells CPU1
+create_bound bound2 -mode auto -auto_effort medium 
+add_cells_to_bound -bound bound2 -cells PSRAM1
+create_bound bound3 -mode auto -auto_effort medium 
+add_cells_to_bound -bound bound3 -cells XIPROM1

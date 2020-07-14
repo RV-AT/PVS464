@@ -1,0 +1,6 @@
+%clang
+
+# Includes
+-I/tools/verilator/include
+-I/tools/systemc/include
+-I/tools/work/sysGears/systemc/rtl/obj_dir
