@@ -23,8 +23,9 @@
 `define WRAP_64B    2'b11
 
 `define RD_SETWORD {2'b00,`DUMMY_8CK,2'b00,`WRAP_64B}
-`define SPI_SETSEQ {`SPICMD_RSTEN,`SPICMD_DORST,`SPICMD_GOQPI};
+`define SPI_SETSEQ {`SPICMD_RSTEN,`SPICMD_DORST,`SPICMD_GOQPI}
 //ATTENTION: FPGA NEEDS TO ENABLE THE PULL UP RESISTORS OF ALL QPI IOs
+//This version only support 8/16/32/64bit QPI fetch. Erase and write ignored
 module AHB_XIP
 (
     // --------------------------
@@ -52,8 +53,6 @@ module AHB_XIP
     output HRESP,
     // Data out
     output reg [63:0] HRDATA,
-
-    
 
     //SPI/QPI Flash Port 
     output [3:0]XPIo,
@@ -108,18 +107,18 @@ assign XPIo=domux;
 reg [3:0]dosel;//命令选择信号
 
 reg [24:0]SPISR;//SPI 命令移位寄存器
-always@(*)//命令选择器，用于顺序发1b命令+地址
+always@(*)//命令选择器，
 begin
   casex(dosel)
-  4'h0:domux=cmdreg[7:4];
+  4'h0:domux=cmdreg[7:4];//送QPI命令，用于顺序发1b命令+地址
   4'h1:domux=cmdreg[3:0];
   4'h2:domux=adrlatch[23:20];
   4'h3:domux=adrlatch[19:16];
   4'h4:domux=adrlatch[15:12];
   4'h5:domux=adrlatch[11:8];
   4'h6:domux=adrlatch[7:4];
-  4'h7:domux=adrlatch[3:0];
-  4'h8:domux={2'bxx,SPISR[23],1'bx};
+  4'h7:domux=adrlatch[3:0];//送命令结束
+  4'h8:domux={2'bxx,SPISR[23],1'bx};//送SPI命令，初始化使用
   default:domux=4'hx;
   endcase
 end
@@ -188,19 +187,19 @@ end
 always@(*)
 begin
   case (fsm_state)
-    PWUP:next_state=QPIEXIT;
-    QPIEXIT:next_state=(seq_cnt==1)?(GAP1):(QPIEXIT);
-    GAP1:next_state=DEVRST;
-    DEVRST:next_state=(seq_cnt==15)?(RSTWAIT):(DEVRST);
-    RSTWAIT:next_state=(delay_cnt==cycRSTWait)?SPIINIT:RSTWAIT;
-    SPIINIT:next_state=(seq_cnt==15)?QPIINIT:SPIINIT;
-    QPIINIT:next_state=(seq_cnt==19)?IDLE:QPIINIT;
+    PWUP:next_state=QPIEXIT;  //上电
+    QPIEXIT:next_state=(seq_cnt==1)?(GAP1):(QPIEXIT);//送HiZ退出QPI模式（如果在QPI）
+    GAP1:next_state=DEVRST; //一个等待周期
+    DEVRST:next_state=(seq_cnt==15)?(RSTWAIT):(DEVRST); //SPI复位
+    RSTWAIT:next_state=(delay_cnt==cycRSTWait)?SPIINIT:RSTWAIT;//读等待状态
+    SPIINIT:next_state=(seq_cnt==15)?QPIINIT:SPIINIT;//SPI初始化，
+    QPIINIT:next_state=(seq_cnt==19)?IDLE:QPIINIT;  //QPI初始化，写等待时长
     IDLE:next_state=(!HSEL)?IDLE:RPREP;
-    RPREP:next_state=RWCMD;
-    RWCMD:next_state=(seq_cnt==10'hf)?(RWAIT):(RWCMD);
-    RWAIT:next_state=(delay_cnt>=cycRdWait)?RREAD:RWAIT;
-    RREAD:next_state=(seq_cnt==rdlen)?RREAD:RDATAO;
-    RDATAO:next_state=(burst_en)?RREAD:RPREP;
+    RPREP:next_state=RWCMD; //AHB置忙，装载QPI命令
+    RWCMD:next_state=(seq_cnt==10'hf)?(RWAIT):(RWCMD);//写读指令和地址
+    RWAIT:next_state=(delay_cnt>=cycRdWait)?RREAD:RWAIT;//等待取数据周期
+    RREAD:next_state=(seq_cnt==rdlen)?RREAD:RDATAO;//数据送buffer
+    RDATAO:next_state=(burst_en)?RREAD:RPREP;//送出buffer，AHB置闲
     default: next_state=PWUP;
   endcase
 end

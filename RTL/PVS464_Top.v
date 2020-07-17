@@ -93,24 +93,12 @@ wire HSEL_PSRAM,HREADY_PSRAM,HRESP_PSRAM;
 wire [63:0]HRDATA_SPM;
 wire HSEL_SPM,HREADY_SPM,HRESP_SPM;
 
-wire [63:0]HRDATA_USB;
-wire HSEL_USB,HREADY_USB,HRESP_USB;
-
 wire [63:0]HRDATA_APB;
 wire HSEL_APB,HREADY_APB,HRESP_APB;
-
-wire [63:0]HRDATA_SDIO;
-wire HSEL_SDIO,HREADY_SDIO,HRESP_SDIO;
-
-wire [63:0]HRDATA_LVDS;
-wire HSEL_LVDS,HREADY_LVDS,HRESP_LVDS;
 
 wire [63:0]HRDATA_FSB;
 wire HSEL_FSB,HREADY_FSB,HRESP_FSB;
 
-
-wire [63:0]HRDATA_DUMMY;
-wire HSEL_DUMMY,HREADY_DUMMY,HRESP_DUMMY;
 
 assign EXT_INTS=1'b0;
 prv464_top CPU1(
@@ -222,24 +210,7 @@ AHB_PSRAM PSRAM1(
     .MCS(MCS),
     .MCLK(MCLK));
 
-AHB_OHCI AHBUSB1
-(
-	.HSEL(HSEL_USB),
-	.HADDR(HADDR[31:0]),
-	.HWRITE(HWRITE),
-	.HTRANS(HTRANS),
-	.HSIZE(HSIZE),
-	.HBURST(HBURST),
-	.HWDATA(HWDATA),
-	.HRESETn(srstn),
-	.HCLK(mainclk),
-	.HMASTLOCK(HMASTLOCK),
-	.HREADY(HREADY_USB),
-	.HRESP(HRESP_USB),
-	.HRDATA(HRDATA_USB),
-	.USB_i(USBi),
-	.USB_o(USBo),
-	.USB_dir(USB_dir));
+
 
 wire [3:0]SDIOo;
 wire [3:0]SDIOi;
@@ -253,28 +224,7 @@ end
 endgenerate
 assign SDCMDi=SDCMD;
 assign SDCMD=SDCMDdir?SDCMDo:1'bz;
-AHB_SDIO SDIO1(
-    .HSEL(HSEL_SDIO),
-	.HADDR(HADDR[31:0]),
-	.HWRITE(HWRITE),
-	.HTRANS(HTRANS),
-	.HSIZE(HSIZE),
-	.HBURST(HBURST),
-	.HWDATA(HWDATA),
-	.HRESETn(srstn),
-	.HCLK(mainclk),
-	.HMASTLOCK(HMASTLOCK),
-    // Output pins //
-    .HREADY(HREADY_SDIO),
-    .HRESP(HRESP_SDIO),
-    .HRDATA(HRDATA_SDIO),
-    .SDIO_o(SDIOo),
-    .SDIO_i(SDIOi),
-    .SDIO_dir(SDIOdir),
-    .SDCMD_o(SDCMDo),
-    .SDCMD_i(SDCMDi),
-    .SDCMD_dir(SDCMDdir),
-    .SDIOCLK(SDCLK));
+
 
 wire i2c_scl_read,i2c_scl_write,i2c_sda_read,i2c_sda_write;
 assign SCL=(i2c_scl_write)?1'bz:1'b0;
@@ -282,7 +232,6 @@ assign i2c_scl_read=SCL;
 assign SDA=(i2c_sda_write)?1'bz:1'b0;
 assign i2c_sda_read=SDA;
 wire FINTi;
-
 
 AHB_APB APB1(
     .HSEL(HSEL_APB),
@@ -388,28 +337,12 @@ AHB_LVDS INTERCON1(
     .LVDSR(LVDSR),
     .LVDSC(LVDSC));
 
-AHB_DUMMY DUMMY(
-	.HSEL(HSEL_DUMMY),
-	.HADDR(HADDR[31:0]),
-	.HWRITE(HWRITE),
-	.HTRANS(HTRANS),
-	.HSIZE(HSIZE),
-	.HBURST(HBURST),
-	.HWDATA(HWDATA),
-	.HRESETn(srstn),
-	.HCLK(mainclk),
-	.HMASTLOCK(HMASTLOCK),
-    // Output pins //
-    .HREADY(HREADY_DUMMY),
-    .HRESP(HRESP_DUMMY),
-    .HRDATA(HRDATA_DUMMY));
 
 ahb_decoder DEC1(
     .HADDR(HADDR),
     .HSELx0(HSEL_XIP),
     .HSELx1(HSEL_PSRAM), 
     .HSELx2(HSEL_SPM),
-	.HSELx3(HSEL_SDIO),
 	.HSELx4(HSEL_APB),
 	.HSELx5(HSEL_USB),
 	.HSELx6(HSEL_FSB),

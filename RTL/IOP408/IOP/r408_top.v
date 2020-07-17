@@ -38,7 +38,7 @@ wire [15:0]branch_offset;
 
 wire [7:0]ds1_data;
 wire [7:0]ds2_data;
-
+wire rd_mux0,rd_mux1;
 
 assign rd_data = rd_mux1 ? (rd_mux0 ? imm : lsu_out) : alu_out;
 
