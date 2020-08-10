@@ -294,7 +294,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document16]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\AD格式PCB库.PcbLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\AD格式PCB库.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -311,7 +311,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document17]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\EG4FPGA库.PcbLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\EG4FPGA库.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -328,7 +328,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document18]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\Logos.PcbLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\Logos.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -345,7 +345,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document19]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\PublicPCBLib.PcbLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\PublicPCBLib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -362,7 +362,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document20]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\STM32.PcbLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\STM32.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -379,7 +379,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document21]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\Power.SchDoc
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\32bMCU.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -396,7 +396,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document22]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\32bMCU.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\74xLogic.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -413,7 +413,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document23]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\74xLogic.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\ADC_DAC.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -430,7 +430,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document24]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\ADC_DAC.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\ADCs.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -447,7 +447,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document25]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\ADCs.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\AnLogic_FPGAs.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -464,7 +464,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document26]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\AnLogic_FPGAs.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\EG4FPGA库.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -481,7 +481,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document27]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\CME-FPGA.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\Logos.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -498,7 +498,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document28]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\EG4FPGA库.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\PowerChips.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -515,7 +515,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document29]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\ETH_Solution.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\PublicSch.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -532,58 +532,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document30]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\Logos.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document31]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\PowerChips.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document32]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\PublicSch.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document33]
-DocumentPath=..\..\..\Hardware\Altium\Public_Libs\Stroage.SchLib
+DocumentPath=..\..\..\..\Hardware\Altium\Public_Libs\Stroage.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0

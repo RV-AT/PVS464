@@ -268,6 +268,7 @@ begin
       begin
         seq_cnt<=seq_cnt+1;
         delay_cnt<=0;
+        dosel<=seq_cnt;
         if (seq_cnt==4'h7)
         begin
         HREADY<=1'b1;

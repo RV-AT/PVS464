@@ -9,29 +9,29 @@ IO Statistics
 
 Gate Statistics
 #Basic gates        14441
-  #and               1867
+  #and               1865
   #nand                 0
   #or                4806
   #nor                  0
   #xor                114
   #xnor                 0
   #buf                  0
-  #not                425
-  #bufif1              57
+  #not                422
+  #bufif1              62
   #MX21              1184
   #FADD                 0
   #DFF               5919
   #LATCH               69
-#MACRO_ADD             95
-#MACRO_EQ             482
-#MACRO_MUX          10049
+#MACRO_ADD             96
+#MACRO_EQ             481
+#MACRO_MUX          10052
 
 Report Hierarchy Area:
 +----------------------------------------------+
 |Instance  |Module     |gates  |seq    |macros |
 +----------------------------------------------+
-|top       |PVS464_Top |8449   |5988   |9120   |
+|top       |PVS464_Top |8453   |5988   |9123   |
 |  CPU1    |prv464_top |5697   |4227   |256    |
-|  PSRAM1  |AHB_PSRAM  |35     |195    |19     |
+|  PSRAM1  |AHB_PSRAM  |33     |195    |19     |
 |  XIPROM1 |AHB_XIP    |213    |156    |23     |
 +----------------------------------------------+

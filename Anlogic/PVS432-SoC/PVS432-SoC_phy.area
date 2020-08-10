@@ -8,20 +8,20 @@ IO Statistics
   #inout               63
 
 Utilization Statistics
-#mslice              3726   out of   4900   76.04%
-  #mreg              2657
-  #mle               7268
-#lslice              3764   out of   4900   76.82%
-  #lreg              3333
-  #lle               7414
-#plb                 2346   out of   2450   95.76%
-#lut                14801   out of  19600   75.52%
-#reg                 5990   out of  19600   30.56%
+#mslice              3695   out of   4900   75.41%
+  #mreg              2645
+  #mle               7200
+#lslice              3662   out of   4900   74.73%
+  #lreg              3328
+  #lle               7138
+#plb                 2375   out of   2450   96.94%
+#lut                14478   out of  19600   73.87%
+#reg                 5973   out of  19600   30.47%
   #gsrn               753
-#le                 14801
-  #lut only          8811   out of  14801   59.53%
-  #reg only             0   out of  14801    0.00%
-  #lut&reg           5990   out of  14801   40.47%
+#le                 14479
+  #lut only          8506   out of  14479   58.75%
+  #reg only             1   out of  14479    0.01%
+  #lut&reg           5972   out of  14479   41.25%
 #dsp                    0   out of     29    0.00%
 #bram                  16   out of     64   25.00%
   #bram9k              16

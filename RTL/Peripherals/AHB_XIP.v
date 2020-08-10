@@ -84,11 +84,10 @@ integer i;
 
 
 
-reg [3:0]io_dir;
 reg [23:0]adrlatch;//地址缓冲寄存器
 
 reg [63:0]rdbuffer;//读缓冲
-reg [63:0]rddemux;//完成字节/半字/字寻址缓冲
+//reg [63:0]rddemux;//完成字节/半字/字寻址缓冲
 
 reg [3:0]next_state;
 reg [3:0]fsm_state;
@@ -190,10 +189,10 @@ begin
     PWUP:next_state=QPIEXIT;  //上电
     QPIEXIT:next_state=(seq_cnt==1)?(GAP1):(QPIEXIT);//送HiZ退出QPI模式（如果在QPI）
     GAP1:next_state=DEVRST; //一个等待周期
-    DEVRST:next_state=(seq_cnt==15)?(RSTWAIT):(DEVRST); //SPI复位
+    DEVRST:next_state=(seq_cnt==10'd15)?(RSTWAIT):(DEVRST); //SPI复位
     RSTWAIT:next_state=(delay_cnt==cycRSTWait)?SPIINIT:RSTWAIT;//读等待状态
-    SPIINIT:next_state=(seq_cnt==15)?QPIINIT:SPIINIT;//SPI初始化，
-    QPIINIT:next_state=(seq_cnt==19)?IDLE:QPIINIT;  //QPI初始化，写等待时长
+    SPIINIT:next_state=(seq_cnt==10'd15)?QPIINIT:SPIINIT;//SPI初始化，
+    QPIINIT:next_state=(seq_cnt>=10'd19)?IDLE:QPIINIT;  //QPI初始化，写等待时长
     IDLE:next_state=(!HSEL)?IDLE:RPREP;
     RPREP:next_state=RWCMD; //AHB置忙，装载QPI命令
     RWCMD:next_state=(seq_cnt==10'hf)?(RWAIT):(RWCMD);//写读指令和地址
@@ -217,7 +216,7 @@ begin
   end
   else
   begin
-    case (fsm_state)
+    case (next_state)
       PWUP:
       begin
         HREADY<=1'b0;
@@ -264,7 +263,7 @@ begin
       QPIINIT:
       begin
           XPIdir<=`QPIo;
-          dosel<=seq_cnt[1:0];
+          dosel<=seq_cnt[3:0];
           seq_cnt<=seq_cnt+1;
       end
       RPREP:
@@ -275,16 +274,17 @@ begin
         seq_cnt<=1'b0;
         delay_cnt<=1'b0;
         XPICS<=1'b0;
-        io_dir<=`QPIo;
+        XPIdir<=`QPIo;
       end
       RWCMD:
       begin
         seq_cnt<=seq_cnt+1;
+        dosel<=seq_cnt[2:0];
         mclk_oe<=1'b1;
       end
       RWAIT:
       begin
-        io_dir<=`QPIi;
+        XPIdir<=`QPIi;
         seq_cnt<=0;
         delay_cnt<=delay_cnt+1;
       end

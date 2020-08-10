@@ -2,7 +2,7 @@
 <Project>
     <Project_Created_Time>2020-01-23 10:00:44</Project_Created_Time>
     <TD_Encoding>UTF-8</TD_Encoding>
-    <TD_Version>4.6.14756</TD_Version>
+    <TD_Version>4.6.18154</TD_Version>
     <UCode>10001000</UCode>
     <Name>PVS432-SoC</Name>
     <HardWare>
@@ -137,8 +137,8 @@
         <TimingProperty/>
     </Property>
     <Project_Settings>
-        <Step_Last_Change>2020-07-16 06:45:24</Step_Last_Change>
-        <Current_Step>0</Current_Step>
+        <Step_Last_Change>2020-08-10 12:12:43</Step_Last_Change>
+        <Current_Step>60</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>
 </Project>

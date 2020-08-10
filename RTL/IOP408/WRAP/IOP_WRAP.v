@@ -4,24 +4,32 @@ module IOP_WRAP
     input sysrst,
     output [10:0]IOPIADDR,
     input  [15:0]IOPIDATA,
-    output [20:0]IOPRADDR,
-    output [20:0]IOPWADDR,
-    output [7:0]IOPWDATA,
-    input  [7:0]IOPRDATA,
-    input IOPWWAIT,
-    input IOPRWAIT
+    input 
 );
 
-r408_top iop408(
+wire [23:0]IOPRADDR;
+wire [23:0]IOPWADDR;
+wire [7:0]IOPWDATA;
+wire [7:0]IOPRDATA;
+wire IOPWRITE;
+wire IOPREAD;
+wire IOPWRDY;
+wire IOPRRDY;
+
+r408e_top iop408(
 .clk(sysclk),
 .rst(sysrst),
 .pc(IOPIADDR),
 .ins(IOPIDATA),
-.addr(),
-.wdata(),
-.rdata(),
-.write(),
-.read(),
-.rdy(IOPRWAIT)
+.raddr(IOPRADDR),
+.waddr(IOPWADDR),
+.wdata(IOPWDATA),
+.rdata(IOPRDATA),
+.write(IOPWRITE),
+.read(IOPREAD),
+.rrdy(IOPRRDY),
+.wrdy(IOPWRDY)
 );
+
+
 endmodule
